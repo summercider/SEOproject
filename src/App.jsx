@@ -2,6 +2,7 @@ import Home from '@/pages/Home';
 import Layout from '@/pages/Layout';
 import { Routes, Route } from 'react-router';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+import Brand from '@/pages/Brand';
 
 export default function App() {
   return (
@@ -9,7 +10,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="/brand" />
+          <Route path="/brand" element={<Brand />} />
           {/* <Route path="/evnet" /> */}
           {/* <Route path="/store" /> */}
           {/* <Route path="/voc" /> */}
