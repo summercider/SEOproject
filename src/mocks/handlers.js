@@ -1,7 +1,6 @@
 import { http, HttpResponse } from 'msw';
 //msw 더미데이터를 people로받음
 import people from './dummy.json';
-import ria from './ria.json';
 
 // post요청으로 데이터 추가시 db AUTO_INCREMENT 구현위해 현재배열중 최대값 찾기
 let maxId = Math.max(...people.map((item) => item.id));
@@ -21,13 +20,6 @@ export const handlers = [
     return HttpResponse.json(
       people.filter((person) => person.id === parseInt(id))
     );
-  }),
-
-  // ria get
-  http.get('/brand', async () => {
-    await sleep(200);
-    console.log(HttpResponse);
-    return HttpResponse.json(ria);
   }),
 
   http.post('/people', async ({ request }) => {

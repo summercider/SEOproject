@@ -1,18 +1,18 @@
 @import 'tailwindcss';
 @theme {
   /* 포인트컬러 */
-  --color-point1: #32a13c;
-  --color-point2: #fbb900;
-  --color-gray-400: #999;
-  --color-gray-500: #666;
-  --color-gray-600: #222;
+  --color-point1: #008d9f;
+  --color-point2: #1cac68;
+  --color-gray-400: #666;
+  --color-gray-500: #444;
+  --color-gray-600: #000;
 
   /* media 분기점 */
   /* --breakpoint-mobile: 768px; */
   /* --breakpoint-tablet: 1201px; */
 
-  --breakpoint-md: 768px;
-  --breakpoint-sm: 1201px;
+  --breakpoint-md: 1201px;
+  --breakpoint-sm: 891px;
 }
 
 body {
