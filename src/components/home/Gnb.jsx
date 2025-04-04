@@ -47,7 +47,8 @@ export default function Gnb() {
       {menus.map((item) => (
         <li key={item.title} className="w-[117px]">
           <button className="text-[20px] py-[12px]">{item.title}</button>
-          <Depth2></Depth2>
+          {/* <Depth2></Depth2> */}
+          <Depth2 subMenu={item.subMenu} />
         </li>
       ))}
     </ul>
