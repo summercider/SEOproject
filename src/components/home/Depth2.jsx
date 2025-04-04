@@ -1,11 +1,15 @@
 import { Link } from 'react-router';
 
-export default function Depth2() {
+export default function Depth2({ subMenu }) {
   return (
     <ul className="">
-      <li>
+      {subMenu.map((menuItem) => (
+        <li key={menuItem.name}>{menuItem.name}</li>
+      ))}
+
+      {/* <li>
         <Link></Link>
-      </li>
+      </li> */}
     </ul>
   );
 }
