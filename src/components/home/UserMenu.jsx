@@ -8,10 +8,15 @@ export default function UserMenu() {
   ];
 
   return (
-    <ul className="flex justify-end items-center h-[40px] text-[13px] text-[#666]">
+    <ul
+      className="flex justify-end items-center h-[40px] 
+    text-[13px] text-[#666] gap-x-[20px] tracking-[-0.025em] leading-[18px]"
+    >
       {userMenus.map((userMenu) => (
         <li key={userMenu.menu}>
-          <Link to={userMenu.path}>{userMenu.menu}</Link>
+          <Link to={userMenu.path} className="py-[6px]">
+            {userMenu.menu}
+          </Link>
         </li>
       ))}
     </ul>
