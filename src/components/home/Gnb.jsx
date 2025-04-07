@@ -7,7 +7,7 @@ const menus = [
     subMenu: [
       { name: '롯데리아', path: '/brand/ria' },
       { name: '엔제리너스', path: '/' },
-      { name: '크리스피크림 도넛', path: '/' },
+      { name: '크리스피크림', path: '/' },
       { name: '플레:이팅', path: '/' },
     ],
   },
@@ -43,13 +43,18 @@ const menus = [
   },
 ];
 
-export default function Gnb() {
+export default function Gnb({ isHovered, onMouseEnter }) {
   return (
-    <ul className="flex ml-[60px]">
+    <ul className="flex ml-[60px]" onMouseEnter={onMouseEnter}>
       {menus.map((item) => (
-        <li key={item.title} className="w-[117px]">
-          <button className="text-[20px] py-[12px]">{item.title}</button>
-          <Depth2 subMenu={item.subMenu} />
+        <li key={item.title} className="w-[117px] relative">
+          <button
+            className="text-[20px] py-[12px] text-[#000] w-full
+          font-bold tracking-[-0.025em] text-left hover:text-[#00a5b9] transition-[0.3s]"
+          >
+            {item.title}
+          </button>
+          {isHovered && <Depth2 subMenu={item.subMenu} />}
         </li>
       ))}
     </ul>
