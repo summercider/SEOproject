@@ -4,7 +4,10 @@ export default function Depth2({ subMenu }) {
   return (
     <ul className="">
       {subMenu.map((menuItem) => (
-        <li key={menuItem.name}>{menuItem.name}</li>
+        // console.log(menuItem),
+        <li key={menuItem.name}>
+          <a href={`${menuItem.path}`}> {menuItem.name}</a>
+        </li>
       ))}
 
       {/* <li>

@@ -16,9 +16,12 @@ export default function BrandInfo() {
           </Link>
         </div>
       </div>
-      <h2 className="text-[22px] ">롯데리아</h2>
-      <p className="mt-[5px]">TASTE THE FUN</p>
-      <p className="text-[14px] mt-[12px] ">
+      <div className="flex justify-between">
+        <h2 className="text-[22px] leading-[28px] ">롯데리아</h2>
+        <span> svg어케하지ㅋ</span>
+      </div>
+      <p className="mt-[12px] leading-[22px]">TASTE THE FUN</p>
+      <p className="mt-[5px] text-[14px] leading-[18px]  ">
         LOTTE EATZ에서 빠르고 편리하게 주문하세요.
       </p>
     </div>

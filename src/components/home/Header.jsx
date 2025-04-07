@@ -15,7 +15,7 @@ export default function Header() {
       </div>
       <div className="flex items-center max-w-[1110px] h-[90px] my-[0] mx-[auto]">
         <h1 className="w-[72px] h-[60px] py-[10px]">
-          <Link className="block">
+          <Link to="/" className="block">
             <img src={logo} />
           </Link>
         </h1>
