@@ -1,59 +1,355 @@
 [
   {
+    "brand": "ria",
     "id": 1100,
-    "type": "burger",
+    "type": "추천메뉴",
     "name": "나폴리맛피아 모짜렐라버거(토마토 바질)",
     "info": "바질의 신선함을 담은 바질마요소스에 풍부하고 진한 토마토소스로 맛을 낸 나폴리맛피아식 스페셜 모짜렐라버거",
     "price": 9100,
     "img": "/images/yjs/ria/burger/napol.png"
   },
   {
+    "brand": "ria",
     "id": 1101,
-    "type": "burger",
-    "name": "나폴리맛피아 모짜렐라버거(발사믹 바질)')",
-    "info": "바질의 신선함을 담은 바질마요소스에 레드와인 발사믹의 산뜻함을 더한 나폴리맛피아식 스페셜 모짜렐라버거",
-    "price": 9100,
-    "img": "/images/yjs/ria/burger/napolB.png"
-  },
-  {
-    "id": 1102,
-    "type": "burger",
-    "name": "전주 비빔라이스 버거",
-    "info": "전주비빔밥을 담은 라이스번과 노른자가 터지는 반숙란,달콤한 고추장 소스가 어우러진 새로운 라이스 버거",
-    "price": 7300,
-    "img": "/images/yjs/ria/burger/rice.png"
-  },
-
-  {
-    "id": 1200,
-    "type": "dessert",
-    "name": "못난이치즈감자",
-    "info": "국내산 못난이 감자로 재탄생한 대만야시장 스타일 감자 디저트 후라잉한 매쉬드포테이토에 체다크림치즈소스를 곁들인 떠먹는 형태의 감자 디저트",
-    "price": 3500,
-    "img": "/images/yjs/ria/dessert/ugly.png"
-  },
-  {
-    "id": 1300,
-    "type": "chick",
-    "name": "화이어윙",
-    "info": "담백한 맛과 매콤한 맛이 잘 조화된 특별한 타입의 치킨",
-    "price": 3200,
-    "img": "/images/yjs/ria/chick/leg.png"
-  },
-  {
-    "id": 1400,
-    "type": "beverage",
+    "type": "추천메뉴",
     "name": "콜라",
     "info": "톡 쏘는 시원 상쾌한 펩시콜라",
     "price": 3200,
     "img": "/images/yjs/ria/beverage/cock.png"
   },
   {
+    "brand": "ria",
+    "id": 1102,
+    "type": "추천메뉴",
+    "name": "치킨 1조각",
+    "info": "담백함과 매콤한맛의 후라이드 치킨(부위랜덤)",
+    "price": 2900,
+    "img": "/images/yjs/ria/chick/chick1.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1103,
+    "type": "추천메뉴",
+    "name": "포테이토",
+    "info": "국바로 튀겨낸 바삭바삭한 후렌치 포테이토",
+    "price": 3500,
+    "img": "/images/yjs/ria/dessert/fries.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1104,
+    "type": "추천메뉴",
+    "name": "나폴리맛피아 모짜렐라버거(발사믹 바질)",
+    "info": "바질의 신선함을 담은 바질마요소스에 레드와인 발사믹의 산뜻함을 더한 나폴리맛피아식 스페셜 모짜렐라버거",
+    "price": 9100,
+    "img": "/images/yjs/ria/burger/napol.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1105,
+    "type": "추천메뉴",
+    "name": "토네이도 망고젤리",
+    "info": "쫄깃한 곤약젤리가 들어있는 달콤 상큼한 망고아이스크림",
+    "price": 3200,
+    "img": "/images/yjs/ria/ice/tone.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1106,
+    "type": "추천메뉴",
+    "name": "전주 비빔라이스 버거",
+    "info": "전주비빔밥을 담은 라이스번과 노른자가 터지는 반숙란,달콤한 고추장 소스가 어우러진 새로운 라이스 버거",
+    "price": 7300,
+    "img": "/images/yjs/ria/burger/rice.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1200,
+    "type": "버거",
+    "name": "나폴리맛피아 모짜렐라버거(토마토 바질)",
+    "info": "바질의 신선함을 담은 바질마요소스에 풍부하고 진한 토마토소스로 맛을 낸 나폴리맛피아식 스페셜 모짜렐라버거",
+    "price": 9100,
+    "img": "/images/yjs/ria/burger/napol.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1201,
+    "type": "버거",
+    "name": "나폴리맛피아 모짜렐라버거(발사믹 바질)",
+    "info": "바질의 신선함을 담은 바질마요소스에 레드와인 발사믹의 산뜻함을 더한 나폴리맛피아식 스페셜 모짜렐라버거",
+    "price": 9100,
+    "img": "/images/yjs/ria/burger/napolB.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1202,
+    "type": "버거",
+    "name": "전주 비빔라이스 버거",
+    "info": "전주비빔밥을 담은 라이스번과 노른자가 터지는 반숙란,달콤한 고추장 소스가 어우러진 새로운 라이스 버거",
+    "price": 7300,
+    "img": "/images/yjs/ria/burger/rice.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1203,
+    "type": "버거",
+    "name": "리아 새우 베이컨",
+    "info": "베이컨+토마토로 더욱 풍성해진 맛과 볼륨감의 새우버거 업그레이드 한정판",
+    "price": 6100,
+    "img": "/images/yjs/ria/burger/shrimpB.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1204,
+    "type": "버거",
+    "name": "리아 불고기 베이컨",
+    "info": "베이컨+토마토로 더욱 풍성해진 맛과 볼륨감의 불고기버거 업그레이드 한정판",
+    "price": 6100,
+    "img": "/images/yjs/ria/burger/bulgogi.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1205,
+    "type": "버거",
+    "name": "더블 클래식치즈버거(버터번)",
+    "info": "두 장의 패티가 이루는 조화로운 맛에 든든함까지 추가된 더블 클래식치즈버거",
+    "price": 7200,
+    "img": "/images/yjs/ria/burger/doubleCheeze.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1206,
+    "type": "버거",
+    "name": "더블 치킨버거",
+    "info": "두 장의 패티가 이루는 조화로운 맛에 든든함까지 추가된 더블버거 시리즈",
+    "price": 5800,
+    "img": "/images/yjs/ria/burger/doubleChick.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1207,
+    "type": "버거",
+    "name": "더블 데리버거",
+    "info": "두 장의 패티가 이루는 조화로운 맛에 든든함까지 추가된 더블버거 시리즈",
+    "price": 5000,
+    "img": "/images/yjs/ria/burger/doubleDelli.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1208,
+    "type": "버거",
+    "name": "한우불고기버거",
+    "info": "브리오쉬번에 국내산 한우를 사용한 패티, 신선한 야채, 특제소스로 완성한 프리미엄 햄버거",
+    "price": 9000,
+    "img": "/images/yjs/ria/burger/korea.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1209,
+    "type": "버거",
+    "name": "모짜렐라 인 더 버거 베이컨",
+    "info": "자연산 모짜렐라 치즈와 고소한 베이컨이 만나 풍부한 맛의 버거",
+    "price": 8000,
+    "img": "/images/yjs/ria/burger/inthe.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1210,
+    "type": "버거",
+    "name": "더블 한우불고기버거",
+    "info": "국내산 한우를 사용한 패티 2장 구성으로 육즙 가득! 묵직한 육풍미를 특징으로 한 프리미엄 버거",
+    "price": 13000,
+    "img": "/images/yjs/ria/burger/double.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1211,
+    "type": "버거",
+    "name": "한우연인팩",
+    "info": "한우불고기버거와 새우버거를 함께 즐길 수 있는 2인팩 제품 구성 : 한우불고기버거, 새우버거, 포테이토, 치즈스틱, 콜라2잔",
+    "price": 16700,
+    "img": "/images/yjs/ria/burger/couple.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1212,
+    "type": "버거",
+    "name": "더블 한우불고기버거",
+    "info": "한우불고기버거와 핫크리스피버거를 함께 즐길 수 있는 2인팩 제품구성 : 한우불고기버거 + 핫크리스피버거 + 양념감자 + 치즈스틱 + 콜라2잔",
+    "price": 18500,
+    "img": "/images/yjs/ria/burger/lux.png"
+  },
+
+  {
+    "brand": "ria",
+    "id": 1300,
+    "type": "디저트",
+    "name": "못난이치즈감자",
+    "info": "국내산 못난이 감자로 재탄생한 대만야시장 스타일 감자 디저트 후라잉한 매쉬드포테이토에 체다크림치즈소스를 곁들인 떠먹는 형태의 감자 디저트",
+    "price": 3500,
+    "img": "/images/yjs/ria/dessert/ugly.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1301,
+    "type": "디저트",
+    "name": "통오징어링",
+    "info": "통오징어로 리얼한 식감과 풍미가 가득한 디저트 (잠발라야 소스 1개 기본제공) ㆍ오징어껍질이 포함되어 있습니다.",
+    "price": 2800,
+    "img": "/images/yjs/ria/dessert/ring.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1302,
+    "type": "디저트",
+    "name": "롱치즈스틱",
+    "info": "롯데리아 대표 디저트인 치즈스틱을 더 크고 더 맛있게",
+    "price": 2400,
+    "img": "/images/yjs/ria/dessert/ugly.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1303,
+    "type": "디저트",
+    "name": "포테이토",
+    "info": "국바로 튀겨낸 바삭바삭한 후렌치 포테이토",
+    "price": 3500,
+    "img": "/images/yjs/ria/dessert/fries.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1304,
+    "type": "디저트",
+    "name": "코울슬로",
+    "info": "아삭한 양상추와 상큼한 드레싱이 조화로운 간편 샐러드",
+    "price": 1900,
+    "img": "/images/yjs/ria/dessert/slo.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1400,
+    "type": "치킨",
+    "name": "화이어윙",
+    "info": "담백한 맛과 매콤한 맛이 잘 조화된 특별한 타입의 치킨",
+    "price": 3200,
+    "img": "/images/yjs/ria/chick/leg.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1401,
+    "type": "치킨",
+    "name": "치킨 1조각",
+    "info": "담백함과 매콤한맛의 후라이드 치킨(부위랜덤)",
+    "price": 2900,
+    "img": "/images/yjs/ria/chick/chick1.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1402,
+    "type": "치킨",
+    "name": "치킨다리 패밀리팩",
+    "info": "치킨다리와 휠레, 화이어윙을 한번에 즐길 수 있는 치킨팩 치킨다리패밀리팩 : 총 1,309kcal ~ 1,456kcal. 선택 디저트, 소스에 따라 상이",
+    "price": 15400,
+    "img": "/images/yjs/ria/chick/familly.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1403,
+    "type": "치킨",
+    "name": "치킨다리 하프팩(4조각)",
+    "info": "한국인이 좋아하는 치킨다리로만 구성되어있는 후라이드 치킨 치킨다리 하프팩 : 총 849kcal ~ 983kcal, 선택 디저트, 소스에 따라 상이",
+    "price": 10900,
+    "img": "/images/yjs/ria/chick/half.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1404,
+    "type": "치킨",
+    "name": "순살치킨 하프팩(11조각)",
+    "info": "바삭한 외피와 육즙 가득한 닭다리살 *순살치킨 11조각 + 소스2개",
+    "price": 10500,
+    "img": "/images/yjs/ria/chick/deborn.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1405,
+    "type": "치킨",
+    "name": "순살치킨 풀팩(22조각)",
+    "info": "바삭한 외피와 육즙 가득한 닭다리살 *순살치킨 22조각 + 소스2개",
+    "price": 17500,
+    "img": "/images/yjs/ria/chick/deborn.png"
+  },
+  {
+    "brand": "ria",
     "id": 1500,
-    "type": "ice",
+    "type": "음료",
+    "name": "콜라",
+    "info": "톡 쏘는 시원 상쾌한 펩시콜라",
+    "price": 3200,
+    "img": "/images/yjs/ria/beverage/cock.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1501,
+    "type": "음료",
+    "name": "사이다",
+    "info": "톡 쏘는 시원 상쾌한 사이다",
+    "price": 3200,
+    "img": "/images/yjs/ria/beverage/cider.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1502,
+    "type": "음료",
+    "name": "제로슈거콜라",
+    "info": "톡 쏘는 시원 상쾌한 제로콜라",
+    "price": 3200,
+    "img": "/images/yjs/ria/beverage/zero.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1503,
+    "type": "음료",
+    "name": "오렌지주스(PET)",
+    "info": "갓 짜낸 오렌지의 상큼함을 담은 100% 오렌지주스",
+    "price": 2500,
+    "img": "/images/yjs/ria/beverage/orange.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1504,
+    "type": "음료",
+    "name": "핫초코",
+    "info": "달콤한 초코를 따뜻하게 즐길 수 있는 음료",
+    "price": 2500,
+    "img": "/images/yjs/ria/beverage/hotchoco.png"
+  },
+
+  {
+    "brand": "ria",
+    "id": 1600,
+    "type": "아이스샷",
     "name": "소프트콘",
     "info": "부드러운 맛과 시원한 소프트 타입의 아이스콘 제품",
     "price": 1300,
     "img": "/images/yjs/ria/ice/icecon.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1601,
+    "type": "아이스샷",
+    "name": "토네이도 망고젤리",
+    "info": "쫄깃한 곤약젤리가 들어있는 달콤 상큼한 망고아이스크림",
+    "price": 3200,
+    "img": "/images/yjs/ria/ice/tone.png"
+  },
+  {
+    "brand": "ria",
+    "id": 1602,
+    "type": "아이스샷",
+    "name": "선데 허쉬초코",
+    "info": "허쉬의 진하고 부드러운 초코맛이 특징인 아이스크림",
+    "price": 2300,
+    "img": "/images/yjs/ria/ice/sunday.png"
   }
 ]

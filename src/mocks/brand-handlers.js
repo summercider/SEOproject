@@ -4,8 +4,8 @@ import { http, HttpResponse } from 'msw';
 import brand from './brand.json';
 
 export const brandhandlers = [
-  // brand-ria get
-  http.get('/brand/ria', async () => {
+  // brand get
+  http.get('/brand', async () => {
     await sleep(200);
     return HttpResponse.json(brand);
   }),

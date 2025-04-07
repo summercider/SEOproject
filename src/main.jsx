@@ -26,7 +26,7 @@ async function enableMocking() {
 // 쿼리클라이언트 인스턴스 생성
 const queryClient = new QueryClient({
   queryCache: new QueryCache({
-    onSuccess: (data) => console.log(data),
+    // onSuccess: (data) => console.log(data),
     onError: (error) => console.error(`Something went wrong: ${error.message}`),
   }),
 });

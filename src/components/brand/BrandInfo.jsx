@@ -1,4 +1,5 @@
 import { Link } from 'react-router';
+import share from '@/assets/images/ico_store_share.svg';
 
 export default function BrandInfo() {
   return (
@@ -17,11 +18,19 @@ export default function BrandInfo() {
         </div>
       </div>
       <div className="flex justify-between">
-        <h2 className="text-[22px] leading-[28px] ">롯데리아</h2>
-        <span> svg어케하지ㅋ</span>
+        <h2 className="text-[22px] leading-[28px] font-[600] text-gray-500 ">
+          롯데리아
+        </h2>
+        <span>
+          <a href="#" className="block w-[22px] h-[22px]">
+            <img src={share} alt="공유하기" />
+          </a>
+        </span>
       </div>
-      <p className="mt-[12px] leading-[22px]">TASTE THE FUN</p>
-      <p className="mt-[5px] text-[14px] leading-[18px]  ">
+      <p className="mt-[12px] leading-[22px] font-[500] text-gray-500 ">
+        TASTE THE FUN
+      </p>
+      <p className="mt-[5px] text-[14px] leading-[18px] text-gray-500 ">
         LOTTE EATZ에서 빠르고 편리하게 주문하세요.
       </p>
     </div>
