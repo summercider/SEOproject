@@ -1,3 +1,9 @@
+import MainInner from '@/components/home/MainInner';
+
 export default function Home() {
-  return <main className="bg-[#ddd] h-[500px] p-[30px]">홈페이지</main>;
+  return (
+    <main className="bg-[#fff] pt-[30px] h-[500px] ">
+      <MainInner></MainInner>
+    </main>
+  );
 }
