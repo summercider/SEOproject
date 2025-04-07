@@ -3,8 +3,9 @@ import Depth2 from '@/components/home/Depth2';
 const menus = [
   {
     title: '브랜드',
+    path: '/brand', // 이거 다른배열 다추가
     subMenu: [
-      { name: '롯데리아', path: '/' },
+      { name: '롯데리아', path: '/brand/ria' },
       { name: '엔제리너스', path: '/' },
       { name: '크리스피크림', path: '/' },
       { name: '플레:이팅', path: '/' },
@@ -12,6 +13,7 @@ const menus = [
   },
   {
     title: '이벤트',
+
     subMenu: [
       { name: '이벤트', path: '/' },
       { name: '체험클래스', path: '/' },

@@ -7,6 +7,22 @@
     "price": 9100,
     "img": "/images/yjs/ria/burger/napol.png"
   },
+  {
+    "id": 1101,
+    "type": "burger",
+    "name": "나폴리맛피아 모짜렐라버거(발사믹 바질)')",
+    "info": "바질의 신선함을 담은 바질마요소스에 레드와인 발사믹의 산뜻함을 더한 나폴리맛피아식 스페셜 모짜렐라버거",
+    "price": 9100,
+    "img": "/images/yjs/ria/burger/napolB.png"
+  },
+  {
+    "id": 1102,
+    "type": "burger",
+    "name": "전주 비빔라이스 버거",
+    "info": "전주비빔밥을 담은 라이스번과 노른자가 터지는 반숙란,달콤한 고추장 소스가 어우러진 새로운 라이스 버거",
+    "price": 7300,
+    "img": "/images/yjs/ria/burger/rice.png"
+  },
 
   {
     "id": 1200,
