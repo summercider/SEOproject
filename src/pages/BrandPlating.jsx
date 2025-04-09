@@ -1,12 +1,20 @@
 import Aside from '@/components/brand/Aside';
 import Bside from '@/components/brand/Bside';
 
-const menus = ['추천메뉴', '버거', '디저트', '치킨', '음료', '아이스샷'];
-const brand = 'ria';
-const name = '롯데리아';
-const color = '#f00028';
+const menus = [
+  '플레:이팅 라운지',
+  '플레:이팅 헬시',
+  '플레:이팅 파크',
+  '무쿄쿠',
+  '효자곰탕',
+  '공평왕돈까스',
+  '서해칼국수',
+];
+const brand = 'plating';
+const name = '플레:이팅';
+const color = '#373737';
 
-export default function BrandRia() {
+export default function BrandPlating() {
   return (
     <div
       className="wrapper pt-[30px]  pb-[100px] relative
@@ -21,7 +29,7 @@ export default function BrandRia() {
           className=" pb-[30px] text-[#000] text-[26px]
           max-sm:hidden "
         >
-          <h3 className="font-[500]">롯데리아</h3>
+          <h3 className="font-[500]">플레:이팅</h3>
         </div>
         {/* main */}
         <div
