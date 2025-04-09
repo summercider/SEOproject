@@ -1,5 +1,6 @@
 import word from '@/assets/images/icon/comm_ico_text_order.svg';
 
+// gnb라인 상단 컬러버튼
 export default function OrderButton() {
   return (
     <button

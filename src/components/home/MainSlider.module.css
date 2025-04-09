@@ -1,0 +1,96 @@
+/* 상단 스와이퍼 */
+.main-banner [class*='swiper-pagination'] {
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+  height: 26px;
+  font-size: 12px;
+  color: #fff;
+  background: rgb(85, 85, 85, 0.5);
+  padding: 2px 5px;
+  border-radius: 13px;
+  left: auto;
+  right: 50px;
+  bottom: 40px;
+  line-height: 26px;
+}
+.main-banner [class*='fraction'] {
+  padding-left: 5px;
+  line-height: 26px;
+}
+.main-banner [class*='pagination-btn'] {
+  font-size: 14px;
+  color: #fff;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+}
+
+.main-banner [class*='swiper-button'] {
+  width: 40px;
+  height: 40px;
+}
+.main-banner [class*='swiper-button-prev'] {
+  left: -20px;
+}
+.main-banner [class*='swiper-button-next'] {
+  left: auto;
+  right: 0;
+}
+
+.main-banner [class*='button']::after {
+  background: rgba(255, 255, 255, 0.8)
+    url(../../assets/images/icon/ui_ico_swiper_arr_h40.svg) no-repeat center /
+    cover;
+  content: '';
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+.main-banner [class*='button-prev']::after {
+  transform: rotate(180deg);
+}
+
+/* 주소설정 탭 스와이퍼 OrderRight */
+
+.order-right [class*='order-button'] {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  z-index: 10;
+}
+
+.order-right [class*='order-button-prev'] {
+  left: 20px;
+  top: 45px;
+}
+.order-right [class*='order-button-next'] {
+  left: auto;
+  top: 0;
+  right: 20px;
+  width: 40px;
+  height: 185px;
+  background: linear-gradient(-90deg, white 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.order-right [class*='order-button']::after {
+  display: block;
+  background: rgba(255, 255, 255, 0.8)
+    url(../../assets/images/icon/ui_ico_swiper_arr_h40.svg) no-repeat center /
+    cover;
+  content: '';
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+.order-right [class*='button-prev']::after {
+  transform: rotate(180deg);
+}
+.order-right [class*='button-next']::after {
+  position: absolute;
+  top: 45px;
+}
