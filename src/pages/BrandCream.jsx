@@ -1,12 +1,12 @@
 import Aside from '@/components/brand/Aside';
 import Bside from '@/components/brand/Bside';
 
-const menus = ['추천메뉴', '버거', '디저트', '치킨', '음료', '아이스샷'];
-const brand = 'ria';
-const name = '롯데리아';
-const color = '#f00028';
+const menus = ['추천메뉴', '도넛 더즌', '도넛 단품', '커피', '아더드링크'];
+const brand = 'cream';
+const name = '크리스피크림';
+const color = '#31955B';
 
-export default function BrandRia() {
+export default function BrandCream() {
   return (
     <div
       className="wrapper pt-[30px]  pb-[100px] relative
@@ -21,7 +21,7 @@ export default function BrandRia() {
           className=" pb-[30px] text-[#000] text-[26px]
           max-sm:hidden "
         >
-          <h3 className="font-[500]">롯데리아</h3>
+          <h3 className="font-[500]">크리스피크림</h3>
         </div>
         {/* main */}
         <div
@@ -29,7 +29,7 @@ export default function BrandRia() {
         max-sm:flex-col"
         >
           <Aside brandexam={name} brandtest={brand} colortest={color} />
-          <Bside menustest={menus} brandtest={brand} />
+          <Bside menustest={menus} brandtest={brand} />{' '}
         </div>
       </div>
     </div>
