@@ -65,10 +65,7 @@ export default function MainBanner() {
       <Swiper
         modules={[Pagination, Autoplay, Navigation]}
         slidesPerView={1}
-        autoplay={{
-          delay: 4000,
-          disableOnInteraction: false,
-        }}
+        autoplay={{ delay: 4000, disableOnInteraction: false }}
         loop={true}
         speed={300}
         pagination={{

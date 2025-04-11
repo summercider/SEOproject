@@ -1,10 +1,15 @@
 import Aside from '@/components/brand/Aside';
 import Bside from '@/components/brand/Bside';
 
-const menus = ['추천메뉴', '도넛 더즌', '도넛 단품', '커피', '아더드링크'];
-const brand = 'cream';
-const name = '크리스피크림';
-const color = '#31955B';
+const creamDefault = {
+  menus: ['추천메뉴', '도넛 더즌', '도넛 단품', '커피', '아더드링크'],
+  brand: 'cream',
+  name: '크리스피크림',
+  color: '#31955B',
+  actionAdd: false,
+  banner: true,
+  logo: false,
+};
 
 export default function BrandCream() {
   return (
@@ -28,8 +33,8 @@ export default function BrandCream() {
           className=" flex
         max-sm:flex-col"
         >
-          <Aside brandexam={name} brandtest={brand} colortest={color} />
-          <Bside menustest={menus} brandtest={brand} />{' '}
+          <Aside defaultData={creamDefault} />
+          <Bside defaultData={creamDefault} />
         </div>
       </div>
     </div>

@@ -318,8 +318,8 @@ body {
   scrollbar-width: none;
 } */
   /* ::-webkit-scrollbar {
-  display: none;
-} */
+    display: none;
+  } */
 
   /* 텍스트 선택 컬러 */
   /* ::selection {

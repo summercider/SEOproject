@@ -4,7 +4,7 @@ import blog from '@/assets/images/ico_blog.svg';
 import facebook from '@/assets/images/ico_fb.svg';
 import twitter from '@/assets/images/ico_twitter.svg';
 
-export default function AsidePop({ setShow }) {
+export default function AsidePop({ setShow, show }) {
   const popRef = useRef(null);
 
   useEffect(() => {
@@ -24,11 +24,16 @@ export default function AsidePop({ setShow }) {
   };
 
   return (
-    <div className="fixed left-0 top-0 w-full h-full flex justify-center items-center bg-[rgba(0,0,0,0.5)]">
+    <div
+      className={`fixed left-0 top-0 w-full h-full flex justify-center items-center bg-[rgba(0,0,0,0.5)]
+      ${show ? 'visible opacity-[100%]' : 'opacity-0 invisible'} `}
+    >
       <div
         ref={popRef}
-        className="w-[400px]  bg-[#fff] rounded-[10px] pt-[20px] pb-[30px] px-[20px]
-        max-sm:absolute max-sm:bottom-0 max-sm:w-full"
+        className={`w-[400px]  bg-[#fff] rounded-[10px] pt-[20px] pb-[30px] px-[20px]
+        max-sm:absolute max-sm:bottom-0 max-sm:w-full max-sm:transition-all 
+        ${show ? 'max-sm:translate-y-0' : 'max-sm:translate-y-[100%]'}  
+        `}
       >
         <div className="relative mb-[20px]">
           <h1 className="text-[18px] font-semibold text-gray-600">공유하기</h1>

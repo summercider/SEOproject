@@ -1,21 +1,26 @@
 import Aside from '@/components/brand/Aside';
 import Bside from '@/components/brand/Bside';
 
-const menus = [
-  '♥신제품♥',
-  '커피',
-  '드링크',
-  '스노우',
-  'TEA',
-  '샌드위치',
-  '케이크',
-  '베이커리',
-  '병음료',
-  '디저트',
-];
-const brand = 'engel';
-const name = '엔제리너스';
-const color = '#DAD6CB';
+const engelDefault = {
+  menus: [
+    '♥신제품♥',
+    '커피',
+    '드링크',
+    '스노우',
+    'TEA',
+    '샌드위치',
+    '케이크',
+    '베이커리',
+    '병음료',
+    '디저트',
+  ],
+  brand: 'engel',
+  name: '엔제리너스',
+  color: '#DAD6CB',
+  actionAdd: false,
+  banner: false,
+  logo: false,
+};
 
 export default function BrandEngel() {
   return (
@@ -39,8 +44,8 @@ export default function BrandEngel() {
           className=" flex
         max-sm:flex-col"
         >
-          <Aside brandexam={name} brandtest={brand} colortest={color} />
-          <Bside menustest={menus} brandtest={brand} />{' '}
+          <Aside defaultData={engelDefault} />
+          <Bside defaultData={engelDefault} />
         </div>
       </div>
     </div>

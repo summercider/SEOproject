@@ -6,6 +6,7 @@ import BrandRia from '@/pages/BrandRia';
 import BrandEngel from '@/pages/BrandEngel';
 import BrandCream from '@/pages/BrandCream';
 import BrandPlating from '@/pages/BrandPlating';
+import RiaDetail from '@/pages/RiaDetail';
 
 export default function App() {
   return (
@@ -14,6 +15,8 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/brand/ria" element={<BrandRia />} />
+          <Route path="/brand/:brand/:id" element={<RiaDetail />} />
+          {/* riaDetail에서 param 확인 필요 */}
           <Route path="/brand/engel" element={<BrandEngel />} />
           <Route path="/brand/cream" element={<BrandCream />} />
           <Route path="/brand/plating" element={<BrandPlating />} />
