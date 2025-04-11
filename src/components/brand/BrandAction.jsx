@@ -4,7 +4,7 @@ export default function BrandAction() {
   return (
     <div
       className="flex gap-[6px]
-    max-sm:px-[20px] "
+    max-sm:px-[20px] max-sm:pb-[30px] "
     >
       <button
         onClick={() => {

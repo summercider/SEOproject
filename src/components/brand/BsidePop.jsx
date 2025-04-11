@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-export default function BsidePop({ setShow }) {
+export default function BsidePop({ setShow, show }) {
   // 외부 클릭시 팝업닫기
   // show의 상태값을 false로 줄거임
   // 클릭위치는 화면 어디든 pop이 아닌 곳
@@ -27,12 +27,19 @@ export default function BsidePop({ setShow }) {
     setShow(false);
   };
 
+  // show :true일떄 opa 1 , visible
+  // default - false일떄 opa 0 , invisible
   return (
-    <div className="fixed  left-0 top-0 w-full h-full flex justify-center items-center bg-[rgba(0,0,0,0.5)]">
+    <div
+      className={`fixed  left-0 top-0 w-full h-full flex justify-center items-center bg-[rgba(0,0,0,0.5)]
+          ${show ? 'visible opacity-[100%]' : 'opacity-0 invisible'}
+        `}
+    >
       <div
         ref={popRef}
-        className="w-[400px]  bg-[#fff] rounded-[10px] pt-[20px] pb-[30px] px-[20px]
-        max-sm:absolute max-sm:bottom-0 max-sm:w-full "
+        className={`w-[400px]  bg-[#fff] rounded-[10px] pt-[20px] pb-[30px] px-[20px]
+        max-sm:fixed max-sm:bottom-0 max-sm:left-0 max-sm:w-full max-sm:transition-all 
+        ${show ? 'max-sm:translate-y-0' : 'max-sm:translate-y-[100%]'}  `} //100%내려놓음
       >
         {/* 위 div fadeup 어떻게주지 */}
         <div className="relative  mb-[20px]">

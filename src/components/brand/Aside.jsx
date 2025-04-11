@@ -1,7 +1,15 @@
+import AsideLogo from '@/components/brand/AsideLogo';
 import BrandAction from '@/components/brand/BrandAction';
+import BrandActionAdd from '@/components/brand/BrandActionAdd';
+import BrandBanner from '@/components/brand/BrandBanner';
 import BrandInfo from '@/components/brand/BrandInfo';
 
-export default function Aside({ brandexam, brandtest, colortest }) {
+export default function Aside({ defaultData }) {
+  // console.log(defaultData);
+
+  // 브랜드액션추가 존재 T/F 받아서 있으면 액션추가
+  // 배너존재 T/F 받아서 있으면 swiper켜주기
+
   return (
     <div
       className="relative
@@ -14,12 +22,12 @@ export default function Aside({ brandexam, brandtest, colortest }) {
         max-sm:w-full max-sm:pr-0 max-sm:pt-0"
       >
         <div>
-          <BrandInfo
-            brandexam={brandexam}
-            brandtest={brandtest}
-            colortest={colortest}
-          />
+          <BrandInfo defaultData={defaultData} />
           <BrandAction />
+
+          {defaultData.actionAdd && <BrandActionAdd />}
+          {defaultData.banner && <BrandBanner />}
+          {defaultData.logo && <AsideLogo />}
         </div>
       </div>
     </div>

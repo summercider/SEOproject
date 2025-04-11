@@ -59,7 +59,7 @@ export default function Nearby() {
         </svg>
       </button>
 
-      {show && <BsidePop setShow={setShow} />}
+      {<BsidePop setShow={setShow} show={show} />}
     </div>
   );
 }

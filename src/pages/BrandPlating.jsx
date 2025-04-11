@@ -1,18 +1,23 @@
 import Aside from '@/components/brand/Aside';
 import Bside from '@/components/brand/Bside';
 
-const menus = [
-  '플레:이팅 라운지',
-  '플레:이팅 헬시',
-  '플레:이팅 파크',
-  '무쿄쿠',
-  '효자곰탕',
-  '공평왕돈까스',
-  '서해칼국수',
-];
-const brand = 'plating';
-const name = '플레:이팅';
-const color = '#373737';
+const platingDefault = {
+  menus: [
+    '플레:이팅 라운지',
+    '플레:이팅 헬시',
+    '플레:이팅 파크',
+    '무쿄쿠',
+    '효자곰탕',
+    '공평왕돈까스',
+    '서해칼국수',
+  ],
+  brand: 'plating',
+  name: '플레:이팅',
+  color: '#373737',
+  actionAdd: true,
+  banner: false,
+  logo: true,
+};
 
 export default function BrandPlating() {
   return (
@@ -36,8 +41,8 @@ export default function BrandPlating() {
           className=" flex
         max-sm:flex-col"
         >
-          <Aside brandexam={name} brandtest={brand} colortest={color} />
-          <Bside menustest={menus} brandtest={brand} />
+          <Aside defaultData={platingDefault} />
+          <Bside defaultData={platingDefault} />
         </div>
       </div>
     </div>

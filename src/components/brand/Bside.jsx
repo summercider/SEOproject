@@ -8,30 +8,46 @@ import { useEffect, useState } from 'react';
 // 리엑트는useEffect랑 useState 해야 데이터쓰지>>그게귀찮아 그럼 리엑트쿼리써 > 근데 그게 tanStack Lib 로 바뀐거고
 // get하려면 useQuery , 나머지작업은 useMutation 쓰셈
 
-export default function Bside({ menustest, brandtest }) {
-  const [selectMenu, setSelectMenu] = useState(menustest[0]);
+export default function Bside({ defaultData }) {
+  // console.log(defaultData);
+  const [selectMenu, setSelectMenu] = useState(defaultData.menus[0]);
   const [filterData, setFilterData] = useState([]);
+  const [sticky, setSticky] = useState(false);
 
   // 데이터 가져오기
   const { data, isLoading, isError, error } = useQuery({
     queryKey: ['brand'],
     queryFn: () => fetch('/brand').then((res) => res.json()),
-    select: (data) => data?.filter((item) => item.brand === brandtest),
+    select: (data) => data?.filter((item) => item.brand === defaultData.brand),
   });
 
   useEffect(() => {
     setFilterData(
       data?.filter((item) => {
-        if (brandtest === 'ria') return item.type === '추천메뉴';
-        if (brandtest === 'engel') return item.type === '♥신제품♥';
-        if (brandtest === 'cream') return item.type === '추천메뉴';
-        if (brandtest === 'plating') return item.type === '플레:이팅 라운지';
+        if (defaultData.brand === 'ria') return item.type === '추천메뉴';
+        if (defaultData.brand === 'engel') return item.type === '♥신제품♥';
+        if (defaultData.brand === 'cream') return item.type === '추천메뉴';
+        if (defaultData.brand === 'plating')
+          return item.type === '플레:이팅 라운지';
       })
     );
   }, [data]);
 
-  // || '플레:이팅 라운지' || '♥신제품♥' > or쓰면 반환값이 불리언 T/F
-  // if:추천메뉴>추천메뉴 , elseif>플레이팅라운지>,else>신제품
+  // useEffect로 클린업주기
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= (window.innerWidth <= 890 ? 848 : 220)) {
+        setSticky(true);
+      } else {
+        setSticky(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const handleClick = (menu) => {
     setSelectMenu(menu);
@@ -39,28 +55,41 @@ export default function Bside({ menustest, brandtest }) {
   };
 
   if (isLoading) return <>Loading...</>;
-  if (isError) return <>{error.message}</>;
+  if (isError) return <>에러:{error.message}</>;
 
   return (
     <div
       className="pl-[20px] w-full
-      max-sm:px-[20px]"
+      max-sm:pt-[10px] max-sm:px-[20px] max-sm:border-t-[10px] max-sm:border-t-[rgba(221,224,227,0.4)]"
     >
       {/* conbody */}
       <div
-        className={`pt-[20px] pl-[20px]  
+        className={`pt-[20px] pl-[20px] 
         max-sm:p-0 `}
       >
         {/* conbox */}
-
         {/* ul stiky 안먹음 -> js scrolltop + 조건 T/F로 after f면none,t면block 처리*/}
         <ul
           className={`flex gap-[6px] pt-[20px] pb-[15px]
+          whitespace-nowrap
           max-sm:py-[15px]
           max-sm: overflow-x-auto 
           `}
+          style={
+            sticky
+              ? {
+                  position: 'fixed',
+                  width: 'calc(100% + 40px)',
+                  top: 0,
+                  paddingLeft: '40px',
+                  marginLeft: '-40px',
+                  boxShadow: '0 6px 12px 0 rgba(0, 0, 0, 0.05)',
+                  background: '#fff',
+                }
+              : {}
+          }
         >
-          {menustest.map((menu, index) => (
+          {defaultData.menus.map((menu, index) => (
             <li key={index} className="max-sm:shrink-0">
               <button
                 className={` btn bg-[#dde0e366] rounded-[4px] border-0 text-[13px]
