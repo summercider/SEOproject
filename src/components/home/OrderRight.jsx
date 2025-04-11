@@ -41,18 +41,23 @@ export default function OrderRight() {
     >
       <Swiper
         modules={[Navigation]}
-        slidesPerView={3.5}
+        slidesPerView="auto"
         spaceBetween={10}
         navigation={{
           prevEl: '.order-button-prev',
           nextEl: '.order-button-next',
         }}
+        style={{ height: '185px' }}
       >
         {tabImg.map((item) => (
-          <SwiperSlide key={item.id}>
-            <Link className="block">
+          <SwiperSlide key={item.id} style={{ maxWidth: '180px' }}>
+            <Link className="block w-full h-full">
               <div>
-                <img src={item.url} alt={item.alt} className="rounded-[4px]" />
+                <img
+                  src={item.url}
+                  alt={item.alt}
+                  className="rounded-[4px] w-full h-full object-cover"
+                />
                 <div className="mt-[12px]">
                   <strong className="block text-[15px] leading-[20px] text-black tracking-[-0.025em] font-medium">
                     {item.alt}

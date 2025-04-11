@@ -27,10 +27,16 @@ export default function Header() {
     after:shadow-[0_4px_10px_rgba(0,0,0,0.05)]`}
       onMouseLeave={handleMouseLeave}
     >
-      <div className="max-w-[1110px] max-sm: my-[0] mx-[auto]">
+      <div
+        className="max-w-[1150px] max-sm: my-[0] mx-[auto]
+      px-[20px]"
+      >
         <UserMenu />
       </div>
-      <div className="flex items-center max-w-[1110px] h-[90px] my-[0] mx-[auto]">
+      <div
+        className="flex items-center max-w-[1150px] h-[90px] my-[0] mx-[auto]
+      px-[20px]"
+      >
         <h1 className="w-[72px] h-[60px] py-[10px]">
           <Link to="/" className="block">
             <img src={logo} />
