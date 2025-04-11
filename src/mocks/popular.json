@@ -1,0 +1,126 @@
+[
+  {
+    "id": 201,
+    "brand": "크리스피크림 도넛",
+    "title": "오리지널 글레이즈드",
+    "Price": 1800,
+    "url": "/images/csa/popular-menu/Krispy-original.jpg",
+    "pointColor": "#1CAC68"
+  },
+  {
+    "id": 202,
+    "brand": "크리스피크림 도넛",
+    "title": "오리지널 글레이즈드 하프더즌",
+    "Price": 10800,
+    "url": "/images/csa/popular-menu/original.jpg",
+    "pointColor": "#1CAC68"
+  },
+  {
+    "id": 203,
+    "brand": "크리스피크림 도넛",
+    "title": "모카 케이크",
+    "Price": 2800,
+    "url": "/images/csa/popular-menu/moca.png",
+    "pointColor": "#1CAC68"
+  },
+  {
+    "id": 204,
+    "brand": "크리스피크림 도넛",
+    "title": "초콜릿 아이스드 글레이즈드",
+    "Price": 1900,
+    "url": "/images/csa/popular-menu/Krispy-choco.jpg",
+    "pointColor": "#1CAC68"
+  },
+  {
+    "id": 205,
+    "brand": "엔제리너스",
+    "title": "아메리카노",
+    "Price": 4500,
+    "url": "/images/csa/popular-menu/angel-americano.png",
+    "pointColor": "#AA9481"
+  },
+  {
+    "id": 206,
+    "brand": "엔제리너스",
+    "title": "에그마요",
+    "Price": 7400,
+    "url": "/images/csa/popular-menu/angel-egg.png",
+    "pointColor": "#AA9481"
+  },
+  {
+    "id": 207,
+    "brand": "엔제리너스",
+    "title": "카페라떼",
+    "Price": 5000,
+    "url": "/images/csa/popular-menu/angel-latte.png",
+    "pointColor": "#AA9481"
+  },
+  {
+    "id": 208,
+    "brand": "엔제리너스",
+    "title": "밀키바닐라엔젤(에스프레소)",
+    "Price": 6400,
+    "url": "/images/csa/popular-menu/angel-milkyBanila.png",
+    "pointColor": "#AA9481"
+  },
+  {
+    "id": 209,
+    "brand": "롯데리아",
+    "title": "리아 불고기",
+    "Price": 5000,
+    "url": "/images/csa/popular-menu/ria-bulgogi.png",
+    "pointColor": "#EF3D2E"
+  },
+  {
+    "id": 210,
+    "brand": "롯데리아",
+    "title": "포테이토",
+    "Price": 2500,
+    "url": "/images/csa/popular-menu/ria-frenchFries.png",
+    "pointColor": "#EF3D2E"
+  },
+  {
+    "id": 211,
+    "brand": "롯데리아",
+    "title": "치즈스틱",
+    "Price": 2800,
+    "url": "/images/csa/popular-menu/ria-cheeseStick.png",
+    "pointColor": "#EF3D2E"
+  },
+  {
+    "id": 212,
+    "brand": "롯데리아",
+    "title": "리아 새우",
+    "Price": 5000,
+    "url": "/images/csa/popular-menu/ria-shirimp.png",
+    "pointColor": "#EF3D2E"
+  },
+  {
+    "id": 213,
+    "brand": "플레:이팅",
+    "title": "공항ㆍ역사에서 만나는 미식 라운지",
+    "url": "/images/csa/popular-menu/pleEating1.jpg",
+    "pointColor": "#222"
+  },
+  {
+    "id": 214,
+    "brand": "플레:이팅",
+    "title": "병원에서 만나는  미식 테이블",
+    "url": "/images/csa/popular-menu/pleEating2.jpg",
+    "pointColor": "#222"
+  },
+  {
+    "id": 215,
+    "brand": "플레:이팅",
+    "title": "레저시설에서 만나는 미식 스테이지",
+    "url": "/images/csa/popular-menu/pleEating3.jpg",
+    "pointColor": "#222"
+  },
+  {
+    "id": 216,
+    "brand": "플레:이팅",
+    "title": "맛에 다함이 없다! 일본전통라멘",
+    "url": "/images/csa/popular-menu/mukyoku.jpg",
+    "pointColor": "#222"
+  }
+]

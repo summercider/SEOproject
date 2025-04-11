@@ -1,0 +1,173 @@
+[
+  {
+    "id": 100,
+    "brand": "롯데리아",
+    "title": "[EATZ]데리버거",
+    "originalPrice": 3700,
+    "discountRate": "22%",
+    "finalPrice": 2900,
+    "productImg": "/images/csa/coupon/hamburger.png"
+  },
+  {
+    "id": 101,
+    "brand": "롯데리아",
+    "title": "[EATZ]토네이도 초코쿠키",
+    "originalPrice": 3200,
+    "discountRate": "22%",
+    "finalPrice": 2500,
+    "productImg": "/images/csa/coupon/tornado.png"
+  },
+  {
+    "id": 102,
+    "brand": "롯데리아",
+    "title": "런치]리아 새우 베이컨 세트",
+    "originalPrice": 8300,
+    "discountRate": "17%",
+    "finalPrice": 6900,
+    "productImg": "/images/csa/coupon/shirimp.png"
+  },
+  {
+    "id": 103,
+    "brand": "롯데리아",
+    "title": "[런치]클래식치즈버거 세트",
+    "originalPrice": 7700,
+    "discountRate": "17%",
+    "finalPrice": 6400,
+    "productImg": "/images/csa/coupon/cheese.png"
+  },
+  {
+    "id": 104,
+    "brand": "롯데리아",
+    "title": "[EATZ]선데 플레인",
+    "originalPrice": 2100,
+    "discountRate": "29%",
+    "finalPrice": 1500,
+    "productImg": "/images/csa/coupon/plain.png"
+  },
+  {
+    "id": 105,
+    "brand": "롯데리아",
+    "title": "[EATZ]치킨휠레2조각",
+    "originalPrice": 3100,
+    "discountRate": "35%",
+    "finalPrice": 2000,
+    "productImg": "/images/csa/coupon/chickenFillet.png"
+  },
+  {
+    "id": 106,
+    "brand": "롯데리아",
+    "title": "[EATZ]통오징어링",
+    "originalPrice": 2800,
+    "discountRate": "29%",
+    "finalPrice": 2000,
+    "productImg": "/images/csa/coupon/squidRing.png"
+  },
+  {
+    "id": 107,
+    "brand": "롯데리아",
+    "title": "[EATZ]2인팩",
+    "originalPrice": 16000,
+    "discountRate": "28%",
+    "finalPrice": 11500,
+    "productImg": "/images/csa/coupon/towPersonPack.png"
+  },
+  {
+    "id": 108,
+    "brand": "롯데리아",
+    "title": "[EATZ]불고기 1인팩",
+    "originalPrice": 10300,
+    "discountRate": "22%",
+    "finalPrice": 8000,
+    "productImg": "/images/csa/coupon/bulgogi.png"
+  },
+  {
+    "id": 109,
+    "brand": "롯데리아",
+    "title": "[EATZ]한우불고기 콤보",
+    "originalPrice": 10200,
+    "discountRate": "14%",
+    "finalPrice": 8800,
+    "productImg": "/images/csa/coupon/koreanBeef.png"
+  },
+  {
+    "id": 110,
+    "brand": "크리스피크림 도넛",
+    "title": "케이크도넛 더즌",
+    "originalPrice": 21500,
+    "discountRate": "21%",
+    "finalPrice": 17000,
+    "productImg": "/images/csa/coupon/doughnuts.png"
+  },
+  {
+    "id": 111,
+    "brand": "크리스피크림 도넛",
+    "title": "케이크도넛 더블 더즌",
+    "originalPrice": 38500,
+    "discountRate": "30%",
+    "finalPrice": 27000,
+    "productImg": "/images/csa/coupon/krispykreme .png"
+  },
+  {
+    "id": 112,
+    "brand": "크리스피크림 도넛",
+    "title": "오리지널 글레이즈드 하프더즌",
+    "originalPrice": 10800,
+    "discountRate": "10%",
+    "finalPrice": 9000,
+    "productImg": "/images/csa/coupon/krispyoriginal.png"
+  },
+  {
+    "id": 113,
+    "brand": "크리스피크림 도넛",
+    "title": "오리지널 글레이즈드 하프더즌",
+    "originalPrice": 10800,
+    "discountRate": "10%",
+    "finalPrice": 9000,
+    "productImg": "/images/csa/coupon/krispyoriginal.png"
+  },
+  {
+    "id": 114,
+    "brand": "크리스피크림 도넛",
+    "title": "어쏘티드 더즌",
+    "originalPrice": 18000,
+    "discountRate": "10%",
+    "finalPrice": 16000,
+    "productImg": "/images/csa/coupon/optimize.png"
+  },
+  {
+    "id": 115,
+    "brand": "엔제리너스",
+    "title": "[잇츠데이] 밀키바닐라엔젤(밀크쉐이크)",
+    "originalPrice": 6400,
+    "discountRate": "22%",
+    "finalPrice": 5000,
+    "productImg": "/images/csa/coupon/banila.png"
+  },
+  {
+    "id": 116,
+    "brand": "엔제리너스",
+    "title": "에그마요반미",
+    "originalPrice": 6200,
+    "discountRate": "10%",
+    "finalPrice": 5000,
+    "productImg": "/images/csa/coupon/egg.png"
+  },
+  {
+    "id": 117,
+    "brand": "엔제리너스",
+    "title": "디카페인 아메리치노",
+    "originalPrice": 5600,
+    "discountRate": "10%",
+    "finalPrice": 4000,
+    "productImg": "/images/csa/coupon/americhino.png"
+  },
+  {
+    "id": 118,
+    "brand": "엔제리너스",
+    "title": "디카페인 카페라떼R",
+    "originalPrice": 5700,
+    "discountRate": "10%",
+    "finalPrice": 4000,
+    "productImg": "/images/csa/coupon/decaffeinlatte.png"
+  }
+]
