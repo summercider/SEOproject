@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="crop" width="120" height="120" transform="translate(-1 -6)" fill="none" opacity="0.2"/>
+    </clipPath>
+  </defs>
+  <g id="img" transform="translate(-198.74 -1300.354)">
+    <g id="마스크_그룹_2982" data-name="마스크 그룹 2982" transform="translate(199.74 1306.354)" clip-path="url(#clip-path)">
+      <g id="No_image_H68" data-name="No image_H68" transform="translate(-568.418 -548.667)">
+        <path id="패스_15847" data-name="패스 15847" d="M723.342,637.942a43.256,43.256,0,0,1,.7-8.411,31.442,31.442,0,1,0-62.234-2.235c1.765,17.293,17.389,30.223,34.485,28.54a30.406,30.406,0,0,0,15.116-5.873l.007,0a12.188,12.188,0,0,0,4.169,5.141,8.394,8.394,0,0,0,7.842,1.348,6.877,6.877,0,0,0,3.181-10.964c-1.726-2.246-3.2-4.657-3.263-7.518Z" transform="translate(-67.113 -21.943)" fill="#fdcd00"/>
+        <g id="그룹_3872" data-name="그룹 3872" transform="translate(617.049 582.654)">
+          <ellipse id="타원_740" data-name="타원 740" cx="4.779" cy="10.393" rx="4.779" ry="10.393" transform="translate(0 0)" fill="#fff"/>
+          <ellipse id="타원_741" data-name="타원 741" cx="4.779" cy="10.393" rx="4.779" ry="10.393" transform="translate(9.609 0)" fill="#fff"/>
+          <path id="패스_15132" data-name="패스 15132" d="M700.825,623.184c0,2.87-1.07,5.2-2.39,5.2s-2.389-2.327-2.389-5.2,1.07-5.2,2.389-5.2S700.825,620.314,700.825,623.184Z" transform="translate(-696.046 -613.362)" fill="#00a5b9"/>
+          <path id="패스_15133" data-name="패스 15133" d="M715.5,623.184c0,2.87-1.07,5.2-2.39,5.2s-2.39-2.327-2.39-5.2,1.07-5.2,2.39-5.2S715.5,620.314,715.5,623.184Z" transform="translate(-701.117 -613.362)" fill="#00a5b9"/>
+        </g>
+        <rect id="사각형_5805" data-name="사각형 5805" width="68" height="68" transform="translate(593.53 568.667)" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

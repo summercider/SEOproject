@@ -1,5 +1,7 @@
+import Coupon from '@/components/home/Coupon';
 import MainBanner from '@/components/home/MainBanner';
 import OrderAddress from '@/components/home/OrderAddress';
+import Popular from '@/components/home/Popular';
 import QuickBox from '@/components/home/QuickBox';
 
 // 왼쪽 컨텐츠
@@ -9,6 +11,8 @@ export default function MainContent() {
       <MainBanner />
       <OrderAddress />
       <QuickBox />
+      <Coupon />
+      <Popular />
     </div>
   );
 }

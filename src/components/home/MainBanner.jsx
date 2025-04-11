@@ -64,8 +64,11 @@ export default function MainBanner() {
     <div className={`relative ${styles['main-banner']}`}>
       <Swiper
         modules={[Pagination, Autoplay, Navigation]}
-        slidesPerView={1}
-        autoplay={{ delay: 4000, disableOnInteraction: false }}
+        slidesPerView="auto"
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false,
+        }}
         loop={true}
         speed={300}
         pagination={{
@@ -81,7 +84,7 @@ export default function MainBanner() {
         }}
       >
         {images.map((image) => (
-          <SwiperSlide key={image.id}>
+          <SwiperSlide key={image.id} style={{ maxWidth: '780px' }}>
             <Link
               className="block w-[760px] h-[320px] rounded-[4px]"
               style={{
