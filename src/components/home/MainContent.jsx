@@ -1,8 +1,11 @@
 import Coupon from '@/components/home/Coupon';
+import EatzTv from '@/components/home/EatzTv';
+import EventBenefits from '@/components/home/EventBenefits';
 import MainBanner from '@/components/home/MainBanner';
 import OrderAddress from '@/components/home/OrderAddress';
 import Popular from '@/components/home/Popular';
 import QuickBox from '@/components/home/QuickBox';
+import Shop from '@/components/home/Shop';
 
 // 왼쪽 컨텐츠
 export default function MainContent() {
@@ -13,6 +16,9 @@ export default function MainContent() {
       <QuickBox />
       <Coupon />
       <Popular />
+      <Shop />
+      <EventBenefits />
+      <EatzTv />
     </div>
   );
 }

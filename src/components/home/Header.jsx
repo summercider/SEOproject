@@ -9,12 +9,13 @@ import OrderButton from '@/components/home/OrderButton';
 export default function Header() {
   const [isHovered, setIsHovered] = useState(false);
 
-  const handleMouseEnter = () => {
+  function handleMouseEnter() {
     setIsHovered(true);
-  };
-  const handleMouseLeave = () => {
+  }
+
+  function handleMouseLeave() {
     setIsHovered(false);
-  };
+  }
 
   return (
     <header
@@ -39,7 +40,7 @@ export default function Header() {
       >
         <h1 className="w-[72px] h-[60px] py-[10px]">
           <Link to="/" className="block">
-            <img src={logo} />
+            <img src={logo} alt="롯데잇츠" />
           </Link>
         </h1>
         <Gnb onMouseEnter={handleMouseEnter} isHovered={isHovered} />
