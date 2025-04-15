@@ -2,26 +2,38 @@
 .main-banner [class*='swiper-button'],
 .order-right [class*='order-button'],
 .quick-box [class*='quick-button'],
-.coupon-banner [class*='coupon-button'] {
+.coupon-banner [class*='coupon-button'],
+.shop [class*='shop-button'],
+.event [class*='event-button'],
+.eatz [class*='eatz-button'] {
   width: 40px;
   height: 40px;
 }
 .order-right [class*='order-button'],
 .quick-box [class*='quick-button'],
-.coupon-banner [class*='coupon-button'] {
+.coupon-banner [class*='coupon-button'],
+.shop [class*='shop-button'],
+.event [class*='event-button'],
+.eatz [class*='eatz-button'] {
   position: absolute;
   z-index: 10;
 }
 .order-right [class*='button-disabled'],
 .quick-box [class*='button-disabled'],
-.coupon-banner [class*='button-disabled'] {
+.coupon-banner [class*='button-disabled'],
+.shop [class*='button-disabled'],
+.event [class*='button-disabled'],
+.eatz [class*='button-disabled'] {
   background: transparent !important;
   opacity: 0.7;
 }
 .main-banner [class*='swiper-button']::after,
 .order-right [class*='order-button']::after,
 .quick-box [class*='quick-button']::after,
-.coupon-banner [class*='coupon-button']::after {
+.coupon-banner [class*='coupon-button']::after,
+.shop [class*='shop-button']::after,
+.event [class*='event-button']::after,
+.eatz [class*='eatz-button']::after {
   background: rgba(255, 255, 255, 0.8)
     url(../../assets/images/icon/ui_ico_swiper_arr_h40.svg) no-repeat center /
     cover;
@@ -35,12 +47,18 @@
 .main-banner [class*='button-prev']::after,
 .order-right [class*='order-button-prev']::after,
 .quick-box [class*='quick-button-prev']::after,
-.coupon-banner [class*='coupon-button-prev']::after {
+.coupon-banner [class*='coupon-button-prev']::after,
+.shop [class*='shop-button-prev']::after,
+.event [class*='event-button-prev']::after,
+.eatz [class*='eatz-button-prev']::after {
   transform: rotate(180deg);
 }
 .order-right [class*='order-button']::after,
 .quick-box [class*='quick-button']::after,
-.coupon-banner [class*='coupon-button']::after {
+.coupon-banner [class*='coupon-button']::after,
+.shop [class*='shop-button']::after,
+.event [class*='event-button']::after,
+.eatz [class*='eatz-button']::after {
   display: block;
 }
 
@@ -135,4 +153,53 @@
   top: 50%;
   transform: translateY(-50%);
   right: -20px;
+}
+
+/* 샵 버튼 */
+.shop [class*='shop-button-prev'] {
+  top: 57px;
+  left: -20px;
+}
+.shop [class*='shop-button-next'] {
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 100%;
+  background: linear-gradient(-90deg, white 0%, rgba(255, 255, 255, 0) 100%);
+}
+.shop [class*='shop-button-next']::after {
+  position: absolute;
+  top: 57px;
+  right: -20px;
+}
+
+/* 이벤트 버튼 */
+.event [class*='event-button-prev'] {
+  top: 54px;
+  left: -20px;
+}
+.event [class*='event-button-next'] {
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 100%;
+  background: linear-gradient(-90deg, white 0%, rgba(255, 255, 255, 0) 100%);
+}
+.event [class*='event-button-next']::after {
+  position: absolute;
+  top: 54px;
+  right: -20px;
+}
+
+/* 잇츠 티비 */
+.eatz [class*='swiper-horizontal'] {
+  padding: 0 40px !important;
+}
+.eatz [class*='eatz-button-prev'] {
+  top: 53px;
+  left: 20px;
+}
+.eatz [class*='eatz-button-next'] {
+  top: 53px;
+  right: 20px;
 }
