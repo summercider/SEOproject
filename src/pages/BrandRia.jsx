@@ -1,5 +1,9 @@
 import Aside from '@/components/brand/Aside';
 import Bside from '@/components/brand/Bside';
+import divide from '@/assets/images/ico_breadcrumb_divide.svg';
+import home from '@/assets/images/comm_ico_home.svg';
+import { Link } from 'react-router';
+// 가격 적용된곳 전부 toLocaleString() 할것 ,있음
 
 const riaDefault = {
   menus: ['추천메뉴', '버거', '디저트', '치킨', '음료', '아이스샷'],
@@ -24,10 +28,30 @@ export default function BrandRia() {
       max-sm:p-0"
       >
         <div
-          className=" pb-[30px] text-[#000] text-[26px]
+          className=" pb-[30px] text-[#5f5e5e] text-[26px] flex justify-between
           max-sm:hidden "
         >
-          <h3 className="font-[500]">{riaDefault.name}</h3>
+          <h3 className="font-[500] text-gray-600">{riaDefault.name}</h3>
+
+          <div>
+            <ul className="flex text-[13px] leading-[16px] items-center gap-[8px] text-gray-400 ">
+              <li>
+                <Link to={'/'}>
+                  <img src={`${home}`} className="-mt-[1px]" />
+                </Link>
+              </li>
+              <li>
+                <img src={`${divide}`} />
+              </li>
+              <li>브랜드</li>
+              <li>
+                <img src={`${divide}`} />
+              </li>
+              <li>
+                <span>{riaDefault.name}</span>
+              </li>
+            </ul>
+          </div>
         </div>
         <div
           className=" flex

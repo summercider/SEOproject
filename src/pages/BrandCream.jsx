@@ -1,5 +1,8 @@
 import Aside from '@/components/brand/Aside';
 import Bside from '@/components/brand/Bside';
+import divide from '@/assets/images/ico_breadcrumb_divide.svg';
+import home from '@/assets/images/comm_ico_home.svg';
+import { Link } from 'react-router';
 
 const creamDefault = {
   menus: ['추천메뉴', '도넛 더즌', '도넛 단품', '커피', '아더드링크'],
@@ -23,10 +26,29 @@ export default function BrandCream() {
       max-sm:p-0"
       >
         <div
-          className=" pb-[30px] text-[#000] text-[26px]
+          className=" pb-[30px] text-[#000] text-[26px]  flex justify-between
           max-sm:hidden "
         >
           <h3 className="font-[500]">크리스피크림</h3>
+          <div>
+            <ul className="flex text-[13px] leading-[16px] items-center gap-[8px] text-gray-400 ">
+              <li>
+                <Link to={'/'}>
+                  <img src={`${home}`} className="-mt-[1px]" />
+                </Link>
+              </li>
+              <li>
+                <img src={`${divide}`} />
+              </li>
+              <li>브랜드</li>
+              <li>
+                <img src={`${divide}`} />
+              </li>
+              <li>
+                <span>{creamDefault.name}</span>
+              </li>
+            </ul>
+          </div>
         </div>
         {/* main */}
         <div
