@@ -31,14 +31,14 @@ export default function BsidePop({ setShow, show }) {
   // default - false일떄 opa 0 , invisible
   return (
     <div
-      className={`fixed  left-0 top-0 w-full h-full flex justify-center items-center bg-[rgba(0,0,0,0.5)]
+      className={`fixed  left-0 top-0 w-full h-full flex justify-center items-center bg-[rgba(0,0,0,0.5)] z-100
           ${show ? 'visible opacity-[100%]' : 'opacity-0 invisible'}
         `}
     >
       <div
         ref={popRef}
         className={`w-[400px]  bg-[#fff] rounded-[10px] pt-[20px] pb-[30px] px-[20px]
-        max-sm:fixed max-sm:bottom-0 max-sm:left-0 max-sm:w-full max-sm:transition-all 
+        max-sm:fixed max-sm:bottom-0 max-sm:left-0 max-sm:w-full max-sm:transition-all z-101
         ${show ? 'max-sm:translate-y-0' : 'max-sm:translate-y-[100%]'}  `} //100%내려놓음
       >
         {/* 위 div fadeup 어떻게주지 */}

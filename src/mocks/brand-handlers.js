@@ -17,8 +17,8 @@ export const brandhandlers = [
     // url파라메터 구조분해
     const { id } = params;
     // 배열 데이터를 json으로 응답
-    console.log(id);
-    console.log(brand.filter((item) => item.id === parseInt(id)));
+    // console.log(id);
+    // console.log(brand.filter((item) => item.id === parseInt(id)));
 
     return HttpResponse.json(
       // id 파라메터가 문자이므로 숫자로 변환후 배열요소중 id와 동일한 요소 찾기

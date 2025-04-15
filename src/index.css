@@ -1375,10 +1375,15 @@ input[type='radio']:checked + label::before {
       height: 40px;
     }
   }
-
-  @keyframes testAnimation {
+  @keyframes popOpacity {
+    0% {
+      opacity: 1;
+    }
     50% {
-      transform: translateY(100px);
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
     }
   }
 }

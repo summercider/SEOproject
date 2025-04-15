@@ -18,7 +18,7 @@ export default function Aside({ defaultData }) {
           "
     >
       <div
-        className="w-[382px] pr-[40px] pt-[40px] shrink-0 sticky top-0 
+        className="w-[382px] pr-[40px] pt-[40px] shrink-0 sticky top-0  z-10
         max-sm:w-full max-sm:pr-0 max-sm:pt-0"
       >
         <div>

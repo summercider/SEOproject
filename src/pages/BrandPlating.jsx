@@ -1,5 +1,8 @@
 import Aside from '@/components/brand/Aside';
 import Bside from '@/components/brand/Bside';
+import divide from '@/assets/images/ico_breadcrumb_divide.svg';
+import home from '@/assets/images/comm_ico_home.svg';
+import { Link } from 'react-router';
 
 const platingDefault = {
   menus: [
@@ -31,10 +34,29 @@ export default function BrandPlating() {
       max-sm:p-0"
       >
         <div
-          className=" pb-[30px] text-[#000] text-[26px]
+          className=" pb-[30px] text-[#000] text-[26px]  flex justify-between
           max-sm:hidden "
         >
           <h3 className="font-[500]">플레:이팅</h3>
+          <div>
+            <ul className="flex text-[13px] leading-[16px] items-center gap-[8px] text-gray-400 ">
+              <li>
+                <Link to={'/'}>
+                  <img src={`${home}`} className="-mt-[1px]" />
+                </Link>
+              </li>
+              <li>
+                <img src={`${divide}`} />
+              </li>
+              <li>브랜드</li>
+              <li>
+                <img src={`${divide}`} />
+              </li>
+              <li>
+                <span>{platingDefault.name}</span>
+              </li>
+            </ul>
+          </div>
         </div>
         {/* main */}
         <div

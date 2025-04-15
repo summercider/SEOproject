@@ -74,6 +74,7 @@ export default function Bside({ defaultData }) {
           whitespace-nowrap
           max-sm:py-[15px]
           max-sm: overflow-x-auto 
+          z-9
           `}
           style={
             sticky

@@ -27,7 +27,7 @@ export default function BrandContentCard({ brandData }) {
         <p className="mt-[12px] text-gray-600 break-keep">{brandData.name}</p>
         {brandData.price ? (
           <p className="mt-[6px] text-gray-600 font-semibold">
-            {brandData.price}
+            {brandData.price.toLocaleString()}
             <span className="ml-[2px]">원</span>
           </p>
         ) : (
