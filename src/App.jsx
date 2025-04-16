@@ -7,6 +7,7 @@ import BrandEngel from '@/pages/BrandEngel';
 import BrandCream from '@/pages/BrandCream';
 import BrandPlating from '@/pages/BrandPlating';
 import BrandDetail from '@/pages/BrandDetail';
+import Login from '@/pages/Login';
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
           {/* <Route path="/evnet" /> */}
           {/* <Route path="/store" /> */}
           {/* <Route path="/voc" /> */}
+          <Route path="/login" element={<Login />} />
         </Route>
       </Routes>
       <ReactQueryDevtools initialIsOpen={false} />

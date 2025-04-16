@@ -44,8 +44,7 @@ export default function LoginPop({ setShow, show }) {
     >
       <div
         ref={popRef}
-        className={`w-[400px] p-[20px] bg-[#fff] rounded-[10px] z-301
-        `}
+        className={`w-[400px] p-[20px] bg-[#fff] rounded-[10px] `}
       >
         <div>
           <h1 className=" pt-[13px] pb-[12px] text-[16px] text-gray-600 text-center leading-[22px]">
@@ -69,7 +68,7 @@ export default function LoginPop({ setShow, show }) {
             className="w-1/2 border bg-[#00A5B9] border-[#00A5B9] rounded-[4px] text-[14px] 
             hover:bg-point1"
           >
-            <Link to={'/'} className="w-full block text-[#fff] ">
+            <Link to={'/login'} className="w-full block text-[#fff] ">
               확인
             </Link>
           </button>
