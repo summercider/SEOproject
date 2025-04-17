@@ -78,7 +78,7 @@ export default function Shop() {
   const shopSelectData = shopList.filter((item) => item.brandName === shopName);
 
   return (
-    <div className="pt-[40px] pr-[20px]">
+    <div className="pt-[40px] pr-[20px] max-sm:pr-0 max-sm:pl-[20px]">
       <ShopMore />
       <ShopBrand
         brandNames={brandNames}

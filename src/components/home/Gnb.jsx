@@ -24,9 +24,10 @@ const menus = [
   },
   {
     title: '스토어',
+    path: '/store',
     subMenu: [
       { name: '전체', path: '/' },
-      { name: '쿠폰', path: '/' },
+      { name: '쿠폰', path: '/store/coupon' },
       { name: 'EATZ카드', path: '/' },
       { name: '쇼핑', path: '/' },
     ],
@@ -42,7 +43,7 @@ const menus = [
   },
 ];
 
-export default function Gnb({ isHovered, onMouseEnter }) {
+export default function Gnb({ isOpen, onMouseEnter }) {
   return (
     <ul className="flex ml-[60px]" onMouseEnter={onMouseEnter}>
       {menus.map((item) => (
@@ -53,7 +54,7 @@ export default function Gnb({ isHovered, onMouseEnter }) {
           >
             {item.title}
           </button>
-          {isHovered && <Depth2 subMenu={item.subMenu} />}
+          {isOpen && <Depth2 subMenu={item.subMenu} />}
         </li>
       ))}
     </ul>

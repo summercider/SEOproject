@@ -8,10 +8,20 @@ export default function PopularViewMore({ activeBrand }) {
     '플레:이팅': '#222',
   };
 
+  const brandLink = [
+    { brand: '크리스피크림 도넛', path: '/brand/cream' },
+    { brand: '엔제리너스', path: '/brand/engel' },
+    { brand: '롯데리아', path: '/brand/ria' },
+    { brand: '플레:이팅', path: '/brand/plating' },
+  ];
+
+  const activePath =
+    brandLink.find((item) => item.brand === activeBrand)?.path || '';
+
   return (
     <div className="mt-[40px]">
       <Link
-        to="/"
+        to={activePath}
         className="block"
         style={{
           borderTop: '1px dashed #DDE0E3',

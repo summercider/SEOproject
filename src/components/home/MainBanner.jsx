@@ -82,11 +82,21 @@ export default function MainBanner() {
           prevEl: '.swiper-button-prev',
           nextEl: '.swiper-button-next',
         }}
+        // breakpoints={{
+        //   340: {
+        //     slidesPerView: 1,
+        //   },
+        // }}
       >
         {images.map((image) => (
-          <SwiperSlide key={image.id} style={{ maxWidth: '780px' }}>
+          <SwiperSlide
+            key={image.id}
+            style={{ maxWidth: '780px' }}
+            className="max-sm:w-full"
+          >
             <Link
-              className="block w-[760px] h-[320px] rounded-[4px]"
+              className="bgsize block w-[760px] h-[320px] rounded-[4px]
+              max-sm:w-full max-sm:h-[350px]"
               style={{
                 backgroundImage: `url(${image.url})`,
                 backgroundPosition: '50% 25%',

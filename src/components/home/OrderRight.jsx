@@ -10,25 +10,25 @@ const tabImg = [
     id: 1,
     url: '/images/csa/order-setting/img_store_lotteria.png',
     alt: '롯데리아',
-    path: '/',
+    path: '/brand/ria',
   },
   {
     id: 2,
     url: '/images/csa/order-setting/img_store_angelinus.png',
     alt: '엔제리너스',
-    path: '/',
+    path: '/brand/engel',
   },
   {
     id: 3,
     url: '/images/csa/order-setting/img_store_krispy.png',
     alt: '크리스피크림 도넛',
-    path: '/',
+    path: '/brand/cream',
   },
   {
     id: 4,
     url: '/images/csa/order-setting/img_store_plating.png',
     alt: '플레:이팅',
-    path: '/',
+    path: '/brand/plating',
   },
 ];
 
@@ -37,6 +37,7 @@ export default function OrderRight() {
   return (
     <div
       className={`relative w-[calc(100%-80px)] h-[185px] pl-[40px] pr-[20px] 
+        max-sm:pl-[20px] max-sm:pr-0
         ${styles['order-right']}`}
     >
       <Swiper
@@ -51,7 +52,7 @@ export default function OrderRight() {
       >
         {tabImg.map((item) => (
           <SwiperSlide key={item.id} style={{ maxWidth: '180px' }}>
-            <Link className="block w-full h-full">
+            <Link to={item.path} className="block w-full h-full">
               <div>
                 <img
                   src={item.url}

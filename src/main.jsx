@@ -8,6 +8,7 @@ import {
   QueryClientProvider,
   QueryCache,
 } from '@tanstack/react-query';
+import ScrollToTop from '@/components/ScrollToTop';
 
 async function enableMocking() {
   // 환경변수로 개발중일때만 서비스워커 활성화
@@ -36,7 +37,9 @@ enableMocking().then(() => {
     <StrictMode>
       <QueryClientProvider client={queryClient}>
         <BrowserRouter>
-          <App />
+          <ScrollToTop>
+            <App />
+          </ScrollToTop>
         </BrowserRouter>
       </QueryClientProvider>
     </StrictMode>

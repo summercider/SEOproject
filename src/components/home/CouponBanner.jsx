@@ -7,7 +7,7 @@ import { useQuery } from '@tanstack/react-query';
 import { Link } from 'react-router';
 
 export default function CouponBanner() {
-  const { data, isLoading, error } = useQuery({
+  const { isPending, data, error } = useQuery({
     queryKey: ['product'],
     queryFn: () => fetch('/product').then((res) => res.json()),
   });
@@ -15,7 +15,7 @@ export default function CouponBanner() {
 
   const riaData = data?.filter((product) => product.brand === '롯데리아');
 
-  if (isLoading) return <p>Loading...</p>;
+  if (isPending) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>;
 
   return (

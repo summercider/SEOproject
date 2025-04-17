@@ -203,3 +203,25 @@
   top: 53px;
   right: 20px;
 }
+
+@media (max-width: 890px) {
+  .main-banner [class*='button'],
+  .order-right [class*='button'],
+  .quick-box [class*='button'],
+  .coupon-banner [class*='button'],
+  .shop [class*='button'],
+  .event [class*='button'],
+  .eatz [class*='button'] {
+    display: none;
+  }
+
+  .main-banner [class*='swiper-slide'] {
+    max-width: none !important;
+    width: 100% !important;
+  }
+  .main-banner [class*='bgsize'] {
+    max-width: none !important;
+    width: 100% !important;
+    background-size: cover !important;
+  }
+}

@@ -7,7 +7,7 @@ export default function OrderButton() {
       className="flex border border-[#00A5B9] bg-[#00A5B9]
     rounded-[22px] px-[18px] h-[44px] items-center justify-center
     ml-[30px] text-white text-[14px] gap-x-[6px] 
-    shadow-[0_5px_10px_rgba(0,165,185,0.3)]"
+    shadow-[0_5px_10px_rgba(0,165,185,0.3) -z-100]"
     >
       <span>
         <svg
