@@ -4,22 +4,22 @@ const brandLink = [
   {
     brand: '엔제리너스',
     brandBg: '/images/csa/brand-item/comm_bg_angelinus.png',
-    path: '/',
+    path: '/brand/engel',
   },
   {
     brand: '롯데리아',
     brandBg: '/images/csa/brand-item/comm_bg_lotteria.png',
-    path: '/',
+    path: '/brand/ria',
   },
   {
     brand: '크리스피크림 도넛',
     brandBg: '/images/csa/brand-item/comm_bg_krispy.png',
-    path: '/',
+    path: '/brand/cream',
   },
   {
     brand: '플레:이팅',
     brandBg: '/images/csa/brand-item/comm_bg_plating.png',
-    path: '/',
+    path: '/brand/plating',
   },
 ];
 
@@ -34,6 +34,7 @@ export default function BrandLink() {
         {brandLink.map((item, idx) => (
           <li key={item.brand} className="col-span-1">
             <Link
+              to={item.path}
               className="h-[100px] block rounded-[4px] p-[16px] 
               text-[14px] tracking-[-0.025em] leading-[18px]"
               style={{
