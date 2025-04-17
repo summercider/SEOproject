@@ -18,7 +18,7 @@ export default function Popular() {
   const selectData = data.filter((item) => item.brand === activeBrand);
 
   return (
-    <div className="pt-[40px] pr-[20px]">
+    <div className="pt-[40px] pr-[20px] max-sm:pl-[20px]">
       <PopularOrder />
       <PopularBrand
         activeBrand={activeBrand}

@@ -1,5 +1,14 @@
+import AddressSearch from '@/components/home/AddressSearch';
+import { useState } from 'react';
+
 // 주소설정 상단 버튼 라인, 주소설정 클릭 팝업, 딤처리 필요
 export default function SettingAddress() {
+  const [isShowAddr, setIsShowAddr] = useState(false);
+
+  function handleSettingAddress() {
+    setIsShowAddr(true);
+  }
+
   return (
     <div className="flex justify-between">
       <div className="flex gap-x-[5px]">
@@ -36,9 +45,16 @@ export default function SettingAddress() {
           className="btn h-[24px] rounded-[20px] border-[#D6DCE1] 
           text-[12px] text-gray-500 tracking-[-0.025em] leading-[16px]
           px-[10px] bg-[#fff]"
+          onClick={handleSettingAddress}
         >
           주소설정
         </button>
+        {isShowAddr ? (
+          <AddressSearch
+            isShowAddr={isShowAddr}
+            setIsShowAddr={setIsShowAddr}
+          />
+        ) : null}
       </div>
     </div>
   );

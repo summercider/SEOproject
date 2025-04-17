@@ -67,7 +67,8 @@ export default function QuickBox() {
   return (
     <div
       className={`pt-[40px] pr-[20px] relative
-      ${styles['quick-box']}`}
+      ${styles['quick-box']}
+      max-sm:pr-0 max-sm:pl-[20px]`}
     >
       <Swiper
         style={{ paddingTop: '40px' }}

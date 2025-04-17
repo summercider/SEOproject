@@ -8,7 +8,11 @@ import BrandCream from '@/pages/BrandCream';
 import BrandPlating from '@/pages/BrandPlating';
 import BrandDetail from '@/pages/BrandDetail';
 import Login from '@/pages/Login';
+
 import Join from '@/pages/Join';
+
+import StoreCoupon from '@/pages/StoreCoupon';
+
 
 export default function App() {
   return (
@@ -23,7 +27,7 @@ export default function App() {
           <Route path="/brand/cream" element={<BrandCream />} />
           <Route path="/brand/plating" element={<BrandPlating />} />
           {/* <Route path="/evnet" /> */}
-          {/* <Route path="/store" /> */}
+          <Route path="/store/coupon" element={<StoreCoupon />} />
           {/* <Route path="/voc" /> */}
           <Route path="/login" element={<Login />} />
           <Route path="/member/joinGate" element={<Join />} />

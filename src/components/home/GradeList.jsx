@@ -1,4 +1,5 @@
-import React from 'react';
+import LoginPop from '@/components/LoginPop';
+import { useState } from 'react';
 
 const gradeList = [
   {
@@ -20,6 +21,12 @@ const gradeList = [
 
 // 어사이드 상단 등급혜택 리스트
 export default function GradeList() {
+  const [show, setShow] = useState(false);
+
+  function handleLoginPop() {
+    setShow(true);
+  }
+
   return (
     <ul>
       {gradeList.map((item) => (
@@ -27,6 +34,7 @@ export default function GradeList() {
           key={item.brand}
           className="flex gap-x-[16px] py-[16px] px-[20px]
         bg-[rgba(239,241,243,0.4);] [&+&]:mt-[6px]"
+          onClick={handleLoginPop}
         >
           <div
             className="w-[40px] h-[40px] rounded-[40px]"
@@ -44,6 +52,7 @@ export default function GradeList() {
             </strong>
             <span className="text-[12px]">등급혜택을 받아보세요!</span>
           </div>
+          {show ? <LoginPop show={show} setShow={setShow} /> : null}
         </li>
       ))}
     </ul>

@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router';
+import ReactDOM from 'react-dom';
 
 export default function LoginPop({ setShow, show }) {
   const popRef = useRef(null);
@@ -36,7 +37,7 @@ export default function LoginPop({ setShow, show }) {
     setShow(false);
   };
 
-  return (
+  return ReactDOM.createPortal(
     <div
       className={`fixed left-0 top-0 w-full h-full flex justify-center items-center bg-[rgba(0,0,0,0.5)] z-300
       ${show ? 'visible opacity-[100%]' : 'opacity-0 invisible'} 
@@ -44,7 +45,8 @@ export default function LoginPop({ setShow, show }) {
     >
       <div
         ref={popRef}
-        className={`w-[400px] p-[20px] bg-[#fff] rounded-[10px] `}
+        className={`w-[400px] p-[20px] bg-[#fff] rounded-[10px] z-301
+        `}
       >
         <div>
           <h1 className=" pt-[13px] pb-[12px] text-[16px] text-gray-600 text-center leading-[22px]">
@@ -68,12 +70,13 @@ export default function LoginPop({ setShow, show }) {
             className="w-1/2 border bg-[#00A5B9] border-[#00A5B9] rounded-[4px] text-[14px] 
             hover:bg-point1"
           >
-            <Link to={'/login'} className="w-full block text-[#fff] ">
+            <Link to={'/'} className="w-full block text-[#fff] ">
               확인
             </Link>
           </button>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }
