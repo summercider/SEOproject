@@ -2,7 +2,7 @@ import { Link } from 'react-router';
 
 export default function UserMenu() {
   const userMenus = [
-    { path: '/', menu: '로그인/회원가입' },
+    { path: '/login', menu: '로그인/회원가입' },
     { path: '/', menu: '주문/예약 내역' },
     { path: '/', menu: '매장찾기' },
   ];

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="160" viewBox="0 0 260 160">
+  <g id="_icon" data-name="+icon" transform="translate(-98 -98)">
+    <rect id="area" width="260" height="160" transform="translate(98 98)" fill="none" opacity="0.1"/>
+    <g id="_icon-2" data-name="+icon" transform="translate(128.365 111.511)">
+      <rect id="door" width="94.213" height="111.223" rx="5" transform="translate(53.315 12.536)" fill="#dde0e3"/>
+      <g id="EATZ" transform="translate(92.57 46.617)">
+        <rect id="area-2" data-name="area" width="86.362" height="86.362" transform="translate(0 0)" fill="none"/>
+        <g id="logo" transform="translate(0.985 2.737)">
+          <path id="패스_15098" data-name="패스 15098" d="M1332.54,798.724a54.158,54.158,0,0,1,.888-10.614,39.238,39.238,0,0,0,.4-10.8,39.991,39.991,0,0,0-79.581,7.98c2.245,21.824,22.125,38.144,43.879,36.018a38.836,38.836,0,0,0,19.231-7.413l.01,0a15.407,15.407,0,0,0,5.3,6.489,10.754,10.754,0,0,0,9.977,1.7,8.652,8.652,0,0,0,4.048-13.837c-2.2-2.835-4.069-5.878-4.154-9.489Z" transform="translate(-1254.037 -741.512)" fill="#fdcd00"/>
+          <g id="그룹_2910" data-name="그룹 2910" transform="translate(28.652 15.127)">
+            <ellipse id="타원_670" data-name="타원 670" cx="6.081" cy="13.117" rx="6.081" ry="13.117" transform="translate(0 0.001)" fill="#fff"/>
+            <path id="패스_15099" data-name="패스 15099" d="M1290.213,763.589c0,7.245-2.723,13.118-6.079,13.118s-6.083-5.873-6.083-13.118,2.723-13.118,6.083-13.118S1290.213,756.346,1290.213,763.589Z" transform="translate(-1265.826 -750.471)" fill="#fff"/>
+            <path id="패스_15100" data-name="패스 15100" d="M1276.95,760.488c0,3.622-1.362,6.558-3.041,6.558s-3.04-2.936-3.04-6.558,1.362-6.56,3.04-6.56S1276.95,756.864,1276.95,760.488Z" transform="translate(-1270.869 -748.091)" fill="#00a5b9"/>
+            <path id="패스_15101" data-name="패스 15101" d="M1284.134,760.488c0,3.622-1.362,6.558-3.042,6.558s-3.041-2.936-3.041-6.558,1.361-6.56,3.041-6.56S1284.134,756.864,1284.134,760.488Z" transform="translate(-1265.826 -748.091)" fill="#00a5b9"/>
+          </g>
+        </g>
+      </g>
+      <path id="door-2" data-name="door" d="M1117.348,81.692l41.484-5.178c6.04-.754,11.674.773,11.674,5.973V203.158c0,5.2-5.635,6.726-11.674,5.973l-41.484-5.178c-4.564-.57-7.848-3.068-7.848-5.973V87.664C1109.5,84.76,1112.784,82.261,1117.348,81.692Z" transform="translate(-1070.579 -76.333)" fill="#1ba5b9"/>
+      <g id="heart" transform="translate(162.669 15.212)">
+        <rect id="사각형_5723" data-name="사각형 5723" width="7.651" height="7.651" transform="translate(2.432 21.731)" fill="#ef3d2e"/>
+        <rect id="사각형_5725" data-name="사각형 5725" width="30.123" height="30.925" rx="15.061" transform="translate(0 0)" fill="#ef3d2e"/>
+        <path id="heart-2" data-name="heart" d="M7.108,12.833l5.725-5.725A4.048,4.048,0,0,0,7.108,1.383L7.1,1.391c-.061-.07-.123-.138-.19-.2A4.048,4.048,0,0,0,1.186,6.91c.067.067.135.129.2.19l-.008.008Z" transform="translate(7.793 9.949)" fill="#fff"/>
+      </g>
+      <g id="deco" transform="translate(0 30.146)">
+        <path id="패스_15625" data-name="패스 15625" d="M0,0S3.153,11.964,10.584,9.909,12.243-2.594,5.168,6.8c-3.056,4.059.969,8.939,6.8,13.382" transform="translate(23.978 24.801) rotate(112)" fill="none" stroke="#00a5b9" stroke-width="1.5"/>
+        <path id="패스_15641" data-name="패스 15641" d="M0,0S5.174,9.841,16.739,6.743" transform="translate(26.389 9.331) rotate(-173)" fill="none" stroke="#fdcd00" stroke-width="1.5"/>
+        <path id="패스_15643" data-name="패스 15643" d="M0,1.938C2.243.748,9.6-1.67,15.406,1.781" transform="translate(184.488 61.136) rotate(-25)" fill="none" stroke="#ef3d2e" stroke-width="1.5"/>
+        <path id="패스_15644" data-name="패스 15644" d="M0,0V12" transform="translate(186.889 79.185) rotate(-70)" fill="none" stroke="#000" stroke-width="1.5"/>
+      </g>
+      <path id="패스_15912" data-name="패스 15912" d="M0,0V10.468" transform="translate(88.644 72.787) rotate(90)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
