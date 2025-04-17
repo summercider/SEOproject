@@ -4,6 +4,9 @@ import { Link } from 'react-router';
 export default function ReactQuery() {
   const { isLoading, isError, data, error } = useUser();
 
+  // isLoading >>>> isPending 사용해라
+  // V5에서
+
   if (isLoading) return <>Loading...</>;
   if (isError) return <>{error.message}</>;
 
