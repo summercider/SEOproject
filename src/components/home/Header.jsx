@@ -24,21 +24,21 @@ export default function Header() {
   function handleHeaderClick(e) {
     if (hdRef.current && e.target === hdRef.current) {
       setIsOpen(false);
-      console.log('hd');
+      // console.log('hd');
     }
   }
 
   function handleHeaderBottomClick(e) {
     if (hbRef.current && e.target === hbRef.current) {
       setIsOpen(false);
-      console.log('hd-bottom');
+      // console.log('hd-bottom');
     }
   }
 
   function handleClickOutside(e) {
     if (hdRef.current && !hdRef.current.contains(e.target)) {
       setIsOpen(false);
-      console.log('outSide');
+      // console.log('outSide');
     }
   }
 
