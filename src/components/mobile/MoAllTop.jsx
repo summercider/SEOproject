@@ -1,9 +1,25 @@
 import { Link } from 'react-router';
 
-export default function MoAllTop() {
+function TopBtn({ icon, text }) {
   return (
-    <div className="bg-[#00A5B9]">
-      <div>
+    <>
+      <button className="btn w-full h-[44px] bg-white rounded-[4px] border-[#DDE0E3]">
+        <span className="mr-[6px]">{icon}</span>
+        <span className="text-[14px] leading-[18px] font-medium">{text}</span>
+      </button>
+    </>
+  );
+}
+
+// 상단 포인트컬러 부분
+export default function MoAllTop({ setMoIsShow }) {
+  function handleClose() {
+    setMoIsShow(false);
+  }
+
+  return (
+    <div className="bg-[#00A5B9] pt-[20px] pb-[30px]">
+      <div className="flex justify-end gap-x-[20px] pr-[20px]">
         <Link>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +62,7 @@ export default function MoAllTop() {
             </g>
           </svg>
         </Link>
-        <Link>
+        <Link onClick={(e) => handleClose(e.preventDefault)}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -86,8 +102,243 @@ export default function MoAllTop() {
           </svg>
         </Link>
       </div>
-      <div></div>
-      <div></div>
+      <div className="flex justify-between items-center px-[20px] pt-[30px] mb-[20px]">
+        <div className="flex gap-x-[16px]">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="43"
+            height="43"
+            viewBox="0 0 160 160"
+          >
+            <g
+              id="No_image_Y_H160"
+              data-name="No image_Y_H160"
+              transform="translate(-593.53 -567.802)"
+            >
+              <path
+                id="패스_15847"
+                data-name="패스 15847"
+                d="M805.889,698.593a101.116,101.116,0,0,1,1.633-19.663,73.227,73.227,0,0,0,.728-20.009c-4.1-40.422-40.4-70.083-80.657-65.922-40.13,4.147-69.672,40.51-65.569,80.705,4.126,40.429,40.654,70.659,80.624,66.724A71.085,71.085,0,0,0,777.989,726.7l.017,0a28.5,28.5,0,0,0,9.746,12.02c5.578,3.983,11.812,5.348,18.333,3.151,10.949-3.689,14.6-16.31,7.436-25.633-4.035-5.252-7.476-10.887-7.629-17.577Z"
+                transform="translate(-65.775 -19.111)"
+                fill="#fdcd00"
+              />
+              <g
+                id="그룹_3872"
+                data-name="그룹 3872"
+                transform="translate(648.517 601.523)"
+              >
+                <ellipse
+                  id="타원_740"
+                  data-name="타원 740"
+                  cx="11.173"
+                  cy="24.299"
+                  rx="11.173"
+                  ry="24.299"
+                  transform="translate(0 0)"
+                  fill="#fff"
+                />
+                <ellipse
+                  id="타원_741"
+                  data-name="타원 741"
+                  cx="11.173"
+                  cy="24.299"
+                  rx="11.173"
+                  ry="24.299"
+                  transform="translate(22.464 0)"
+                  fill="#fff"
+                />
+                <path
+                  id="패스_15132"
+                  data-name="패스 15132"
+                  d="M707.219,630.138c0,6.709-2.5,12.149-5.587,12.149s-5.585-5.44-5.585-12.149,2.5-12.15,5.585-12.15S707.219,623.427,707.219,630.138Z"
+                  transform="translate(-696.046 -607.175)"
+                  fill="#33b7c7"
+                />
+                <path
+                  id="패스_15133"
+                  data-name="패스 15133"
+                  d="M721.9,630.138c0,6.709-2.5,12.149-5.587,12.149s-5.587-5.44-5.587-12.149,2.5-12.15,5.587-12.15S721.9,623.427,721.9,630.138Z"
+                  transform="translate(-688.262 -607.175)"
+                  fill="#33b7c7"
+                />
+              </g>
+              <rect
+                id="사각형_5805"
+                data-name="사각형 5805"
+                width="160"
+                height="160"
+                transform="translate(593.53 567.802)"
+                fill="none"
+              />
+            </g>
+          </svg>
+          <div>
+            <Link className="text-[22px] leading-[28px] text-white flex items-center">
+              <span className="leading-[43px]">로그인</span>
+              <span className="leading-[43px]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                >
+                  <g id="ic_arrow_H20" transform="translate(-151 -97)">
+                    <rect
+                      id="사각형_5270"
+                      data-name="사각형 5270"
+                      width="20"
+                      height="20"
+                      transform="translate(151 97)"
+                      fill="none"
+                    />
+                    <path
+                      id="패스_14967"
+                      data-name="패스 14967"
+                      d="M154.847,100.112l6,6-6,6"
+                      transform="translate(3.153 0.888)"
+                      fill="none"
+                      stroke="#fff"
+                      strokeWidth="2"
+                    />
+                  </g>
+                </svg>
+              </span>
+            </Link>
+          </div>
+        </div>
+        <div>
+          <Link className="text-[14px] leading-[18px] text-white underline">
+            회원가입
+          </Link>
+        </div>
+      </div>
+      <div className="flex gap-x-[6px] justify-center px-[20px]">
+        <TopBtn
+          icon={
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              id="ic_map"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+            >
+              <path
+                id="패스_14699"
+                data-name="패스 14699"
+                d="M0,0H16V16H0Z"
+                fill="none"
+              />
+              <line
+                id="선_52"
+                data-name="선 52"
+                y2="9"
+                transform="translate(6 3)"
+                fill="none"
+                stroke="#000"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1"
+              />
+              <line
+                id="선_53"
+                data-name="선 53"
+                y2="8"
+                transform="translate(10 5)"
+                fill="none"
+                stroke="#000"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1"
+              />
+              <path
+                id="패스_14700"
+                data-name="패스 14700"
+                d="M3,6.063,7,4l4,2.063L15,4v8.938L11,15,7,12.938,3,15V6.063"
+                transform="translate(-1 -1)"
+                fill="none"
+                stroke="#000"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1"
+              />
+            </svg>
+          }
+          text={'매장찾기'}
+        ></TopBtn>
+        <TopBtn
+          icon={
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+            >
+              <g id="ic_order" transform="translate(-212 -164)">
+                <path
+                  id="패스_14701"
+                  data-name="패스 14701"
+                  d="M0,0H16V16H0Z"
+                  transform="translate(212 164)"
+                  fill="none"
+                />
+                <g
+                  id="사각형_5055"
+                  data-name="사각형 5055"
+                  transform="translate(214 166)"
+                  fill="#fff"
+                  stroke="#000"
+                  strokeWidth="1"
+                >
+                  <rect width="12" height="14" rx="2" stroke="none" />
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="11"
+                    height="13"
+                    rx="1.5"
+                    fill="none"
+                  />
+                </g>
+                <g
+                  id="사각형_5056"
+                  data-name="사각형 5056"
+                  transform="translate(217 165)"
+                  fill="#fff"
+                  stroke="#000"
+                  strokeWidth="1"
+                >
+                  <rect width="6" height="4" rx="2" stroke="none" />
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="5"
+                    height="3"
+                    rx="1.5"
+                    fill="none"
+                  />
+                </g>
+                <rect
+                  id="사각형_5057"
+                  data-name="사각형 5057"
+                  width="6"
+                  height="1"
+                  rx="0.5"
+                  transform="translate(217 171.5)"
+                />
+                <rect
+                  id="사각형_5058"
+                  data-name="사각형 5058"
+                  width="6"
+                  height="1"
+                  rx="0.5"
+                  transform="translate(217 174)"
+                />
+              </g>
+            </svg>
+          }
+          text={'주문/예약내역'}
+        ></TopBtn>
+      </div>
     </div>
   );
 }

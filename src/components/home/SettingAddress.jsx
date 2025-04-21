@@ -39,7 +39,6 @@ export default function SettingAddress() {
         </p>
       </div>
       <div className="pr-[20px]">
-        <div className="sr-only">딤</div>
         <button
           type="button"
           className="btn h-[24px] rounded-[20px] border-[#D6DCE1] 

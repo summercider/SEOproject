@@ -3,7 +3,10 @@ import { Link } from 'react-router';
 export default function EatzTvMore() {
   return (
     <div className="flex justify-between px-[40px] pt-[40px] mb-[20px]">
-      <h2 className="text-[22px] leading-[28px] tracking-[-0.025em]">
+      <h2
+        className="text-[22px] leading-[28px] tracking-[-0.025em]
+      max-sm:flex max-sm:flex-col"
+      >
         <span className="text-white">집 - 중 </span>
         <strong style={{ fontWeight: 'bold', color: '#fdcd00' }}>
           EATZ TV

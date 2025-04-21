@@ -1,0 +1,6 @@
+<svg id="ic_map" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <path id="패스_14699" data-name="패스 14699" d="M0,0H16V16H0Z" fill="none"/>
+  <line id="선_52" data-name="선 52" y2="9" transform="translate(6 3)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  <line id="선_53" data-name="선 53" y2="8" transform="translate(10 5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  <path id="패스_14700" data-name="패스 14700" d="M3,6.063,7,4l4,2.063L15,4v8.938L11,15,7,12.938,3,15V6.063" transform="translate(-1 -1)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+</svg>

@@ -4,9 +4,9 @@ export default function PopularItem({ list }) {
   // console.log(list);
   return (
     <li>
-      <Link>
+      <Link className="max-sm:flex max-sm:gap-x-[15px] max-sm:items-center">
         <div
-          className="w-[175px] h-[175px]"
+          className="w-[175px] h-[175px] max-sm:w-[90px] max-sm:h-[90px]"
           style={{
             backgroundImage: `url(${list.url})`,
             backgroundPosition: 'center',

@@ -3,7 +3,10 @@ import { Link } from 'react-router';
 export default function EventMore() {
   return (
     <div className="flex justify-between pt-[40px] mb-[20px]">
-      <h2 className="text-[22px] leading-[28px] tracking-[-0.025em] text-black">
+      <h2
+        className="text-[22px] leading-[28px] tracking-[-0.025em] text-black
+      max-sm:flex max-sm:flex-col"
+      >
         혜택이 쏟아지는 <strong className="font-bold">이벤트</strong>
       </h2>
       <Link className="flex justify-center items-center gap-x-[2px]">

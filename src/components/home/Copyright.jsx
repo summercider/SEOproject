@@ -2,7 +2,7 @@ import { Link } from 'react-router';
 
 export default function Copyright() {
   return (
-    <div className="mt-[30px] flex gap-x-[20px] items-center">
+    <div className="mt-[30px] flex gap-x-[20px] items-center max-sm:flex-col max-sm:items-start max-sm:gap-y-[20px] max-sm:mt-[20px]">
       <h3 className="text-[13px] leading-[18px] tracking-[-0.025em] text-[#999]">
         copyright © 2023 Lotte GRS co.,ltd all right reserved
       </h3>

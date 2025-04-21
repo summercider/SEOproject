@@ -2,7 +2,8 @@ export default function FamilySite() {
   return (
     <button
       type="button"
-      className="flex justify-between items-center min-w-[180px] h-[44px] border border-[#DDE0E3] bg-white px-[16px] rounded-[4px] text-[14px] text-black"
+      className="flex justify-between items-center min-w-[180px] h-[44px] border border-[#DDE0E3] bg-white px-[16px] rounded-[4px] text-[14px] text-black
+      max-sm:min-w-0 max-sm:w-[120px]"
     >
       <span>Family Site</span>
       <div>

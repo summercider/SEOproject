@@ -155,6 +155,13 @@
   right: -20px;
 }
 
+/* 파퓰러 브랜드, 샵 브랜드 스와이퍼*/
+.popular-brand [class*='swiper-slide'],
+.shop-brand [class*='swiper-slide'] {
+  /* 크기 만큼 */
+  width: auto !important;
+}
+
 /* 샵 버튼 */
 .shop [class*='shop-button-prev'] {
   top: 57px;
@@ -202,6 +209,11 @@
 .eatz [class*='eatz-button-next'] {
   top: 53px;
   right: 20px;
+}
+
+/* 스토어 쿠폰 메뉴 슬라이더 */
+.store-coupon [class*='swiper-slide'] {
+  width: auto !important;
 }
 
 @media (max-width: 890px) {
