@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="ic_order" transform="translate(-212 -164)">
+    <path id="패스_14701" data-name="패스 14701" d="M0,0H16V16H0Z" transform="translate(212 164)" fill="none"/>
+    <g id="사각형_5055" data-name="사각형 5055" transform="translate(214 166)" fill="#fff" stroke="#000" stroke-width="1">
+      <rect width="12" height="14" rx="2" stroke="none"/>
+      <rect x="0.5" y="0.5" width="11" height="13" rx="1.5" fill="none"/>
+    </g>
+    <g id="사각형_5056" data-name="사각형 5056" transform="translate(217 165)" fill="#fff" stroke="#000" stroke-width="1">
+      <rect width="6" height="4" rx="2" stroke="none"/>
+      <rect x="0.5" y="0.5" width="5" height="3" rx="1.5" fill="none"/>
+    </g>
+    <rect id="사각형_5057" data-name="사각형 5057" width="6" height="1" rx="0.5" transform="translate(217 171.5)"/>
+    <rect id="사각형_5058" data-name="사각형 5058" width="6" height="1" rx="0.5" transform="translate(217 174)"/>
+  </g>
+</svg>

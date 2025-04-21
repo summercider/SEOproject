@@ -2,6 +2,7 @@ import LoginPop from '@/components/LoginPop';
 import { useState } from 'react';
 import { Link } from 'react-router';
 
+// 모바일 상단 메뉴
 export default function MoTopMenuWrap({ isScrolled }) {
   const [show, setShow] = useState(false);
 

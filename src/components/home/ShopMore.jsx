@@ -3,7 +3,10 @@ import { Link } from 'react-router';
 export default function ShopMore() {
   return (
     <div className="flex justify-between pt-[40px] mb-[20px] max-sm:pr-[20px]">
-      <h2 className="text-[22px] leading-[28px] tracking-[-0.025em] text-black">
+      <h2
+        className="text-[22px] leading-[28px] tracking-[-0.025em] text-black
+      max-sm:flex max-sm:flex-col"
+      >
         집으로 받는 <strong className="font-bold">잇츠 MD</strong>
       </h2>
       <Link className="flex justify-center items-center gap-x-[2px]">

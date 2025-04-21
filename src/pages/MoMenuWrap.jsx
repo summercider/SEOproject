@@ -1,30 +1,59 @@
 import LoginPop from '@/components/LoginPop';
 import MoAllMenu from '@/components/mobile/MoAllMenu';
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router';
+import { Link, useLocation } from 'react-router';
 
 const liStyle = {
   padding: '13px 15px 8px',
 };
 
+// 하단 모바일 메뉴 5개
 export default function MoMenuWrap() {
   const [show, setShow] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isActive, setIsActive] = useState(true);
+  const [isActive, setIsActive] = useState(0);
   const [moIsShow, setMoIsShow] = useState(false);
 
+  const { pathname } = useLocation();
+
+  // 이동 시 경로가 변경 될 때 마다 state 초기화
+  useEffect(() => {
+    setMoIsShow(false);
+  }, [location.pathname]);
+
+  // 로그인 팝업
   function handleLoginPop() {
     setShow(true);
   }
 
+  // 삼단메뉴 클릭 시 스크롤 막기
+  function stopScroll() {
+    document.body.style.overflow = 'hidden';
+  }
+  function allowScroll() {
+    document.body.style.overflow = 'auto';
+  }
+
+  useEffect(() => {
+    if (moIsShow) {
+      stopScroll();
+    } else {
+      allowScroll();
+    }
+    return () => {
+      allowScroll();
+    };
+  }, [moIsShow]);
+
+  // 마우스 다운 업 메뉴 숨김 처리
   useEffect(() => {
     function handleMouseWheel(e) {
       if (e.deltaY > 0) {
         setIsScrolled(true);
-        console.log('하단 down', e.deltaY);
+        // console.log('하단 down', e.deltaY);
       } else if (e.deltaY < 0) {
         setIsScrolled(false);
-        console.log('하단 up', e.deltaY);
+        // console.log('하단 up', e.deltaY);
       }
     }
 
@@ -34,9 +63,9 @@ export default function MoMenuWrap() {
     };
   }, []);
 
-  // function handleClickActive() {
-  //   setIsActive(true);
-  // }
+  function handleClickActive() {
+    setIsActive(0);
+  }
 
   function handleClicMoMenuShow() {
     setMoIsShow(true);
@@ -56,9 +85,9 @@ export default function MoMenuWrap() {
         <ul className="flex justify-around h-[65px]">
           <li style={liStyle}>
             <Link
-              // onClick={(e) => handleClickActive(e.preventDefault)}
-              className="relative after::content-[''] after:absolute after:bottom-[-8px] after:left-[12px] after:w-[4px] after:h-[4px] after:bg-[#00A5B9] after:rounded-[4px]"
               to="/"
+              onClick={(e) => handleClickActive(e.preventDefault)}
+              className="relative after::content-[''] after:absolute after:bottom-[-8px] after:left-[12px] after:w-[4px] after:h-[4px] after:bg-[#00A5B9] after:rounded-[4px]"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="26" height="28">
                 <g id="ic_dock_home_sel">
@@ -76,7 +105,7 @@ export default function MoMenuWrap() {
                       className="icon_fill"
                       d="M 20445.935546875 12619.935546875 L 20445.935546875 12616.435546875 C 20445.935546875 12614.505859375 20447.505859375 12612.935546875 20449.435546875 12612.935546875 L 20453.435546875 12612.935546875 C 20455.365234375 12612.935546875 20456.935546875 12614.505859375 20456.935546875 12616.435546875 L 20456.935546875 12619.935546875 L 20457.435546875 12619.935546875 C 20457.513671875 12619.935546875 20457.5859375 12619.93359375 20457.654296875 12619.9287109375 L 20457.734375 12619.923828125 L 20459.4375 12619.923828125 C 20460.263671875 12619.923828125 20460.9375 12619.2509765625 20460.9375 12618.423828125 L 20460.9375 12608.013671875 C 20460.9375 12607.3681640625 20460.560546875 12606.6728515625 20460.01953125 12606.3212890625 L 20459.9453125 12606.2724609375 L 20459.873046875 12606.2177734375 L 20452.736328125 12600.80859375 C 20452.11328125 12600.328125 20451.73046875 12600.2724609375 20451.49609375 12600.2724609375 C 20451.095703125 12600.2724609375 20450.62890625 12600.4638671875 20450.0703125 12600.8564453125 L 20442.708984375 12606.2958984375 C 20442.326171875 12606.57421875 20441.9375 12607.2529296875 20441.9375 12608.013671875 L 20441.935546875 12609.3828125 C 20441.935546875 12609.400390625 20441.935546875 12609.41796875 20441.935546875 12609.435546875 L 20441.935546875 12616.435546875 C 20441.935546875 12616.453125 20441.935546875 12616.470703125 20441.935546875 12616.4873046875 L 20441.9375 12616.5830078125 L 20441.9375 12618.423828125 C 20441.9375 12619.2509765625 20442.611328125 12619.923828125 20443.4375 12619.923828125 L 20445.138671875 12619.923828125 L 20445.21875 12619.9287109375 C 20445.287109375 12619.93359375 20445.357421875 12619.935546875 20445.435546875 12619.935546875 L 20445.935546875 12619.935546875 M 20448.435546875 12622.4365234375 L 20445.435546875 12622.435546875 C 20445.302734375 12622.435546875 20445.1796875 12622.431640625 20445.05859375 12622.423828125 L 20443.4375 12622.423828125 C 20441.232421875 12622.423828125 20439.4375 12620.6298828125 20439.4375 12618.423828125 L 20439.4375 12616.5830078125 C 20439.435546875 12616.5341796875 20439.435546875 12616.4853515625 20439.435546875 12616.435546875 L 20439.435546875 12609.435546875 C 20439.435546875 12609.38671875 20439.435546875 12609.3369140625 20439.4375 12609.2880859375 L 20439.4375 12608.013671875 C 20439.4375 12606.53515625 20440.14453125 12605.0673828125 20441.240234375 12604.2724609375 L 20448.607421875 12598.8291015625 C 20449.611328125 12598.1181640625 20450.556640625 12597.7724609375 20451.49609375 12597.7724609375 C 20452.4375 12597.7724609375 20453.341796875 12598.1181640625 20454.263671875 12598.8291015625 L 20461.3828125 12604.2255859375 C 20462.630859375 12605.037109375 20463.4375 12606.5244140625 20463.4375 12608.013671875 L 20463.4375 12618.423828125 C 20463.4375 12620.6298828125 20461.642578125 12622.423828125 20459.4375 12622.423828125 L 20457.814453125 12622.423828125 C 20457.693359375 12622.431640625 20457.56640625 12622.435546875 20457.435546875 12622.435546875 L 20454.435546875 12622.435546875 L 20454.435546875 12616.435546875 C 20454.435546875 12615.8837890625 20453.986328125 12615.435546875 20453.435546875 12615.435546875 L 20449.435546875 12615.435546875 C 20448.884765625 12615.435546875 20448.435546875 12615.8837890625 20448.435546875 12616.435546875 L 20448.435546875 12622.4365234375 Z"
                       stroke="none"
-                      fill={isActive ? '#00A5B9' : '#ccc'}
+                      fill={isActive === 0 ? '#00A5B9' : '#ccc'}
                     ></path>
                   </g>
                 </g>
@@ -96,7 +125,7 @@ export default function MoMenuWrap() {
                   className="icon_fill"
                   data-name="그룹 910"
                   transform="translate(1 3)"
-                  fill="#ccc"
+                  fill={isActive === 1 ? '#00A5B9' : '#ccc'}
                 >
                   <path
                     id="빼기_57"
@@ -110,7 +139,7 @@ export default function MoMenuWrap() {
                     data-name="사각형 5428"
                     transform="translate(0 -1)"
                     fill="none"
-                    stroke="#ccc"
+                    stroke={isActive === 1 ? '#00A5B9' : '#ccc'}
                     strokeWidth="2.5"
                   >
                     <path
@@ -128,7 +157,7 @@ export default function MoMenuWrap() {
                     data-name="사각형 5429"
                     transform="translate(7.5 -1)"
                     fill="none"
-                    stroke="#ccc"
+                    stroke={isActive === 1 ? '#00A5B9' : '#ccc'}
                     strokeWidth="2.5"
                   >
                     <path
@@ -146,7 +175,7 @@ export default function MoMenuWrap() {
                     data-name="사각형 5430"
                     transform="translate(15 -1)"
                     fill="none"
-                    stroke="#ccc"
+                    stroke={isActive === 1 ? '#00A5B9' : '#ccc'}
                     strokeWidth="2.5"
                   >
                     <path
@@ -215,7 +244,7 @@ export default function MoMenuWrap() {
                       data-name="타원 356"
                       transform="translate(56 750)"
                       fill="none"
-                      stroke="#ccc"
+                      stroke={isActive === 2 ? '#00A5B9' : '#ccc'}
                       strokeWidth="2.5"
                     >
                       <circle cx="6.5" cy="6.5" r="6.5" stroke="none"></circle>
@@ -235,7 +264,7 @@ export default function MoMenuWrap() {
                         className="icon_fill"
                         d="M 11.5 2.5 C 8.30226993560791 2.5 5.877519607543945 2.826040267944336 4.2930908203125 3.469069957733154 C 3.625450134277344 3.740029811859131 3.123510360717773 4.067480087280273 2.841510772705078 4.416009902954102 C 2.682510375976562 4.61253023147583 2.5 4.913340091705322 2.5 5.5 C 2.5 5.906070232391357 2.5 6.751029968261719 4.455070495605469 7.521530151367188 C 6.079290390014648 8.161649703979492 8.515390396118164 8.5 11.5 8.5 C 14.48460960388184 8.5 16.92070960998535 8.161649703979492 18.54492950439453 7.521530151367188 C 20.5 6.751029968261719 20.5 5.906070232391357 20.5 5.5 C 20.5 4.913340091705322 20.31748962402344 4.61253023147583 20.15848922729492 4.416009902954102 C 19.87648963928223 4.067480087280273 19.37454986572266 3.740029811859131 18.7069091796875 3.469069957733154 C 17.12248039245605 2.826040267944336 14.69773006439209 2.5 11.5 2.5 M 11.5 0 C 17.89210891723633 0 23 1.240209579467773 23 5.5 C 23 9.759790420532227 17.39755058288574 11 11.5 11 C 5.602449417114258 11 0 9.759790420532227 0 5.5 C 0 1.240209579467773 5.107889175415039 0 11.5 0 Z"
                         stroke="none"
-                        fill="#ccc"
+                        fill={isActive === 2 ? '#00A5B9' : '#ccc'}
                       ></path>
                     </g>
                   </g>
@@ -268,7 +297,7 @@ export default function MoMenuWrap() {
                       x2="20"
                       transform="translate(54 753.5)"
                       fill="none"
-                      stroke="#ccc"
+                      stroke={isActive === 3 ? '#00A5B9' : '#ccc'}
                       strokeLinecap="round"
                       strokeWidth="2.5"
                     ></line>
@@ -279,7 +308,7 @@ export default function MoMenuWrap() {
                       x2="20"
                       transform="translate(54 762.5)"
                       fill="none"
-                      stroke="#ccc"
+                      stroke={isActive === 3 ? '#00A5B9' : '#ccc'}
                       strokeLinecap="round"
                       strokeWidth="2.5"
                     ></line>
@@ -290,7 +319,7 @@ export default function MoMenuWrap() {
                       x2="20"
                       transform="translate(54 771.5)"
                       fill="none"
-                      stroke="#ccc"
+                      stroke={isActive === 3 ? '#00A5B9' : '#ccc'}
                       strokeLinecap="round"
                       strokeWidth="2.5"
                     ></line>
