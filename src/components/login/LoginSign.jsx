@@ -4,10 +4,10 @@ import SignSns from '@/components/SignSns';
 
 export default function LoginSign() {
   return (
-    <div className="max-w-[420px] mx-auto my-0">
+    <div className="max-w-[420px] mx-auto my-0 pt-[20px]">
       {/* 로그인 헤더 */}
       <h3 className="text-center text-[22px] text-gray-600 font-semibold">
-        지금로그인하고
+        지금 로그인하고
         <br />
         <strong className="text-[#00A5B9] font-semibold">LOTTE EATZ </strong>
         혜택받으세요!
