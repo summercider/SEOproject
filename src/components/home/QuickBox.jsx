@@ -10,7 +10,7 @@ const quickBox = [
     id: 1,
     ThumbImg: '/images/csa/quick-box/coupon.png',
     title: '쿠폰',
-    path: '/',
+    path: '/store/coupon',
   },
   {
     id: 2,
@@ -46,7 +46,7 @@ const quickBox = [
     id: 7,
     ThumbImg: '/images/csa/quick-box/stamp.png',
     title: '스탬프',
-    path: '/',
+    path: '/login',
   },
   {
     id: 8,
@@ -58,7 +58,7 @@ const quickBox = [
     id: 9,
     ThumbImg: '/images/csa/quick-box/myStore.png',
     title: '나의 매장',
-    path: '/',
+    path: '/login',
   },
 ];
 
@@ -83,7 +83,7 @@ export default function QuickBox() {
         {quickBox.map((item) => (
           <SwiperSlide key={item.id} style={{ maxWidth: '100px' }}>
             <div className="w-[100px] bg-[rgba(239,241,243,0.6)] rounded-[4px]">
-              <Link to="/" className="block w-full h-[100px] py-[21px]">
+              <Link to={item.path} className="block w-full h-[100px] py-[21px]">
                 <span
                   className="block w-[36px] h-[36px] mx-[auto]"
                   style={{

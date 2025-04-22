@@ -9,7 +9,10 @@ export default function CouponMore() {
       >
         바로 받는 <strong className="font-bold">쿠폰</strong>
       </h2>
-      <Link className="flex justify-center items-center gap-x-[2px]">
+      <Link
+        to="/store/coupon"
+        className="flex justify-center items-center gap-x-[2px]"
+      >
         <span className="text-[14px] leading-[18px] tracking-[-0.025em] text-black">
           더보기
         </span>
