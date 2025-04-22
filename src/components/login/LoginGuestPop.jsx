@@ -105,22 +105,30 @@ export default function LoginGuestPop({ setShow, show }) {
       setJoinPopShow(true);
       setJoinPopType('phoneVerify');
     } else {
-      if (time === 0) {
+      if (agree === false) {
         setJoinPopShow(true);
-        setJoinPopType('time');
+        setJoinPopType('agree');
+      } else if (check === false) {
+        setJoinPopShow(true);
+        setJoinPopType('check');
       } else {
-        if (verifyCode === '') {
+        if (time === 0) {
           setJoinPopShow(true);
-          setJoinPopType('verify');
-        } else if (verifyCode.length !== 6) {
-          setJoinPopShow(true);
-          setJoinPopType('fail');
-        } else if (verifyCode.length == 6) {
-          setJoinPopShow(true);
-          setJoinPopType('pass');
+          setJoinPopType('time');
         } else {
-          setJoinPopShow(true);
-          setJoinPopType('fail');
+          if (verifyCode === '') {
+            setJoinPopShow(true);
+            setJoinPopType('verify');
+          } else if (verifyCode.length !== 6) {
+            setJoinPopShow(true);
+            setJoinPopType('fail');
+          } else if (verifyCode.length == 6) {
+            setJoinPopShow(true);
+            setJoinPopType('pass');
+          } else {
+            setJoinPopShow(true);
+            setJoinPopType('fail');
+          }
         }
       }
     }

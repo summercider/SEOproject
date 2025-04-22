@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="ic_filter_h24" transform="translate(-301 4)">
+    <rect id="사각형_5831" data-name="사각형 5831" width="24" height="24" transform="translate(301 -4)" fill="none"/>
+    <line id="선_112" data-name="선 112" y2="5" transform="translate(306)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1.5"/>
+    <g id="타원_858" data-name="타원 858" transform="translate(303.5 5)" fill="none" stroke="#000" stroke-width="1.5">
+      <circle cx="2.5" cy="2.5" r="2.5" stroke="none"/>
+      <circle cx="2.5" cy="2.5" r="1.75" fill="none"/>
+    </g>
+    <line id="선_113" data-name="선 113" y2="6" transform="translate(306 10)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1.5"/>
+    <g id="타원_859" data-name="타원 859" transform="translate(310.5 -1)" fill="none" stroke="#000" stroke-width="1.5">
+      <circle cx="2.5" cy="2.5" r="2.5" stroke="none"/>
+      <circle cx="2.5" cy="2.5" r="1.75" fill="none"/>
+    </g>
+    <line id="선_115" data-name="선 115" y2="12" transform="translate(313 4)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1.5"/>
+    <line id="선_116" data-name="선 116" y2="8" transform="translate(320)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1.5"/>
+    <g id="타원_860" data-name="타원 860" transform="translate(317.5 8)" fill="none" stroke="#000" stroke-width="1.5">
+      <circle cx="2.5" cy="2.5" r="2.5" stroke="none"/>
+      <circle cx="2.5" cy="2.5" r="1.75" fill="none"/>
+    </g>
+    <line id="선_117" data-name="선 117" y2="3" transform="translate(320 13)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1.5"/>
+  </g>
+</svg>
