@@ -842,7 +842,7 @@
     "brand": "plating",
     "id": 5101,
     "type": "플레:이팅 헬시",
-    "name": "돌솥 비빔밥",
+    "name": "도가니 탕",
     "info": "",
     "price": 0,
     "img": "/images/yjs/plating/healthy/dogani.jpg"
@@ -851,7 +851,7 @@
     "brand": "plating",
     "id": 5102,
     "type": "플레:이팅 헬시",
-    "name": "돌솥 비빔밥",
+    "name": "도가니 탕",
     "info": "",
     "price": 0,
     "img": "/images/yjs/plating/healthy/dogani.jpg"
@@ -869,7 +869,7 @@
     "brand": "plating",
     "id": 5201,
     "type": "플레:이팅 파크",
-    "name": "돌솥 비빔밥",
+    "name": "돈까스 오므라이스",
     "info": "",
     "price": 0,
     "img": "/images/yjs/plating/park/cutlet.jpg"
@@ -878,7 +878,7 @@
     "brand": "plating",
     "id": 5202,
     "type": "플레:이팅 파크",
-    "name": "돌솥 비빔밥",
+    "name": "돈까스 오므라이스",
     "info": "",
     "price": 0,
     "img": "/images/yjs/plating/park/cutlet.jpg"
@@ -896,7 +896,7 @@
     "brand": "plating",
     "id": 5301,
     "type": "무쿄쿠",
-    "name": "돌솥 비빔밥",
+    "name": "돈코츠 라멘",
     "info": "",
     "price": 0,
     "img": "/images/yjs/plating/ramen/don.jpg"
@@ -905,7 +905,7 @@
     "brand": "plating",
     "id": 5302,
     "type": "무쿄쿠",
-    "name": "돌솥 비빔밥",
+    "name": "돈코츠 라멘",
     "info": "",
     "price": 0,
     "img": "/images/yjs/plating/ramen/don.jpg"
@@ -923,7 +923,7 @@
     "brand": "plating",
     "id": 5401,
     "type": "효자곰탕",
-    "name": "돌솥 비빔밥",
+    "name": "양지곰탕",
     "info": "",
     "price": 0,
     "img": "/images/yjs/plating/hyoja/yang.jpg"
@@ -932,7 +932,7 @@
     "brand": "plating",
     "id": 5402,
     "type": "효자곰탕",
-    "name": "돌솥 비빔밥",
+    "name": "양지곰탕",
     "info": "",
     "price": 0,
     "img": "/images/yjs/plating/hyoja/yang.jpg"
@@ -944,13 +944,13 @@
     "name": "공평왕돈까스",
     "info": "",
     "price": 0,
-    "img": "/images/yjs/plating/king/.jpg"
+    "img": "/images/yjs/plating/king/king.jpg"
   },
   {
     "brand": "plating",
     "id": 5501,
     "type": "공평왕돈까스",
-    "name": "돌솥 비빔밥",
+    "name": "공평 왕 돈까스",
     "info": "",
     "price": 0,
     "img": "/images/yjs/plating/king/kingcut.jpg"
@@ -959,7 +959,7 @@
     "brand": "plating",
     "id": 5502,
     "type": "공평왕돈까스",
-    "name": "돌솥 비빔밥",
+    "name": "공평 왕 돈까스",
     "info": "",
     "price": 0,
     "img": "/images/yjs/plating/king/kingcut.jpg"
@@ -977,7 +977,7 @@
     "brand": "plating",
     "id": 5601,
     "type": "서해칼국수",
-    "name": "돌솥 비빔밥",
+    "name": "바지락 칼국수",
     "info": "",
     "price": 0,
     "img": "/images/yjs/plating/noodle/bajirak.jpg"
@@ -986,7 +986,7 @@
     "brand": "plating",
     "id": 5602,
     "type": "서해칼국수",
-    "name": "돌솥 비빔밥",
+    "name": "바지락 칼국수",
     "info": "",
     "price": 0,
     "img": "/images/yjs/plating/noodle/bajirak.jpg"

@@ -68,9 +68,12 @@ export default function LoginPop({ setShow, show }) {
             type="btn"
             onClick={closeClick}
             className="w-1/2 border bg-[#00A5B9] border-[#00A5B9] rounded-[4px] text-[14px] 
-            hover:bg-point1"
+            hover:bg-point1  "
           >
-            <Link to={'/'} className="w-full block text-[#fff] ">
+            <Link
+              to={'/login'}
+              className="w-full  text-[#fff] h-full flex justify-center items-center"
+            >
               확인
             </Link>
           </button>

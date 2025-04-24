@@ -154,14 +154,14 @@ export default function LoginGuestPop({ setShow, show }) {
     const outsideClick = (e) => {
       if (!popRef.current.contains(e.target)) {
         setShow(false);
-        console.log(e.target, '외부');
+        // console.log(e.target, '외부');
         // join팝업 초기화 전화번호칸 비우기 ,
         setPhone('');
         setProveHide(false);
         setEnter(false);
       }
       if (popRef.current.contains(e.target)) {
-        console.log(e.target, '내부');
+        // console.log(e.target, '내부');
       }
     };
     document.addEventListener('mousedown', outsideClick); //클릭이면 외부에서 마우스를 땔때 닫혀버림 ex: 인풋에서 드래그 외부에서 놓음
@@ -380,6 +380,7 @@ export default function LoginGuestPop({ setShow, show }) {
           </div>
           {/* 검증로직 + 팝업 */}
           <JoinPop
+            setShow={setShow}
             joinPopShow={joinPopShow}
             setJoinPopShow={setJoinPopShow}
             type={joinPopType}
