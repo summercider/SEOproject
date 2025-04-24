@@ -1,0 +1,17 @@
+.card-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 216px;
+  background: url('../assets/images/card/card_bg.svg') center / cover no-repeat;
+  z-index: -1;
+}
+
+@media (max-width: 890px) {
+  .card-bg::before {
+    width: calc(100% + 40px);
+    left: -20px;
+  }
+}

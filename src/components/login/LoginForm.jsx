@@ -42,7 +42,7 @@ export default function LoginForm() {
       // console.log('검증올패스');
       pwRef.current.removeAttribute('style');
       idRef.current.removeAttribute('style');
-      alert('제출완료 다시');
+      alert('제출완료');
       setPwValue('');
     }
   };

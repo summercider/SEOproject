@@ -2,12 +2,12 @@ import { FaqIcon } from '@/components/voc/FaqIcon';
 
 export default function FaqMore({
   visibleCount,
-  finalFilteredFaqList,
+  finalFilteredVocList,
   showMoreBtn,
 }) {
   return (
     <div className="mt-[50px] flex justify-center ">
-      {visibleCount < finalFilteredFaqList.length && (
+      {visibleCount < finalFilteredVocList.length && (
         <button
           className="btn flex items-center  border-[#DDE0E3] rounded-[4px] w-[200px] h-[44px] text-gray-600 text-[14px] font-medium
       max-sm:w-full hover:bg-[#EFF1F3] "

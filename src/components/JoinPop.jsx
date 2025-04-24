@@ -1,6 +1,11 @@
 import { useEffect } from 'react';
 
-export default function JoinPop({ setJoinPopShow, joinPopShow, type }) {
+export default function JoinPop({
+  setJoinPopShow,
+  joinPopShow,
+  type,
+  setShow,
+}) {
   let typeMessage = '';
   switch (type) {
     case 'agree':

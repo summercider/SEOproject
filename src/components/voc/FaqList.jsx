@@ -12,7 +12,6 @@ export default function FaqList({ limitedFaqList, showAnswer, showAnswerBtn }) {
 
   return (
     <div className="border-t-1 border-[#222]">
-      {/*  */}
       <ul>
         {limitedFaqList.map((faq, index) => (
           <li key={index}>

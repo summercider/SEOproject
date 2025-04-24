@@ -11,6 +11,17 @@ import Login from '@/pages/Login';
 import Join from '@/pages/Join';
 import StoreCoupon from '@/pages/StoreCoupon';
 import Faq from '@/pages/Faq';
+import StoreCard from '@/pages/StoreCard';
+import EventRoulette from '@/pages/EventRoulette';
+import DailyCheck from '@/pages/DailyCheck';
+import Notice from '@/pages/Notice';
+import Class from '@/pages/Class';
+import EatTv from '@/pages/EatTV';
+import EventAll from '@/pages/EventAll';
+import Survey from '@/pages/Survey';
+import VocVoice from '@/pages/VocVoice';
+import StoreAll from '@/pages/StoreAll';
+import StoreShop from '@/pages/StoreShop';
 
 export default function App() {
   return (
@@ -25,11 +36,24 @@ export default function App() {
           <Route path="/brand/cream" element={<BrandCream />} />
           <Route path="/brand/plating" element={<BrandPlating />} />
           {/* <Route path="/evnet" /> */}
+          <Route path="/event/all" element={<EventAll />} />
+          <Route path="/event/class" element={<Class />} />
+          <Route path="/event/roulette" element={<EventRoulette />} />
+          <Route path="/event/eatzTv" element={<EatTv />} />
+          <Route path="/event/dailycheck" element={<DailyCheck />} />
+          {/* <Route path="/store" /> */}
+          <Route path="/store/all" element={<StoreAll />} />
           <Route path="/store/coupon" element={<StoreCoupon />} />
+          <Route path="/store/card" element={<StoreCard />} />
+          <Route path="/store/shop" element={<StoreShop />} />
           {/* <Route path="/voc" /> */}
+          <Route path="/voc/faq" element={<Faq />} />
+          <Route path="/voc/notice" element={<Notice />} />
+          <Route path="/voc/survey" element={<Survey />} />
+          <Route path="/voc/voice" element={<VocVoice />} />
+          {/* 로그인,가입 */}
           <Route path="/login" element={<Login />} />
           <Route path="/member/joinGate" element={<Join />} />
-          <Route path="/voc/faq" element={<Faq />} />
         </Route>
       </Routes>
       <ReactQueryDevtools initialIsOpen={false} />
