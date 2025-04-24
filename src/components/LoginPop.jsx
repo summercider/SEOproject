@@ -27,11 +27,11 @@ export default function LoginPop({ setShow, show }) {
       }
     };
     document.addEventListener('mousedown', outsideClick);
-
     return () => {
       document.removeEventListener('mousedown', outsideClick);
     };
   }, []);
+
   //state변경
   const closeClick = () => {
     setShow(false);
