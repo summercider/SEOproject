@@ -12,7 +12,8 @@ const util = [
 export default function UtilMenu() {
   const [show, setShow] = useState(false);
 
-  function handleLoginPop() {
+  function handleLoginPop(e) {
+    e.preventDefault();
     setShow(true);
   }
 
@@ -20,12 +21,13 @@ export default function UtilMenu() {
     <ul className="flex ml-[auto]">
       {util.map((item, index) => (
         <li key={index} className="[&+&]:pl-[20px]">
-          <Link onClick={(e) => handleLoginPop(e.preventDefault)}>
+          <Link onClick={(e) => handleLoginPop(e)}>
             <img src={item.img} alt={item.alt} />
           </Link>
-          {show ? <LoginPop show={show} setShow={setShow} /> : null}
         </li>
       ))}
+      {/* 팝업 반복문에서 뺴버림 */}
+      {show ? <LoginPop show={show} setShow={setShow} /> : null}
     </ul>
   );
 }

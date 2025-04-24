@@ -11,8 +11,8 @@ export default function UserMenu() {
   ];
 
   function handleLoginPop(userMenu, e) {
-    e.preventDefault;
     if (userMenu.menu !== '로그인/회원가입') {
+      e.preventDefault(); // () 빠져서 추가함
       console.log(userMenu);
       setShow(true);
     }
@@ -33,9 +33,10 @@ export default function UserMenu() {
           >
             {userMenu.menu}
           </Link>
-          {show ? <LoginPop show={show} setShow={setShow} /> : null}
         </li>
       ))}
+      {/* 팝업 반복문에서 뺴버림 */}
+      {show ? <LoginPop show={show} setShow={setShow} /> : null}
     </ul>
   );
 }
