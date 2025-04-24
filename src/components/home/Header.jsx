@@ -1,5 +1,5 @@
 import Gnb from '@/components/home/Gnb';
-import { Link } from 'react-router';
+import { Link, useLocation } from 'react-router';
 import logo from '@/assets/images/comm_header_logo.svg';
 import UserMenu from '@/components/home/UserMenu';
 import { useEffect, useRef, useState } from 'react';
@@ -12,6 +12,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const hdRef = useRef(null);
   const hbRef = useRef(null);
+  const location = useLocation();
 
   function handleMouseEnter() {
     setIsOpen(true);
@@ -45,34 +46,6 @@ export default function Header() {
   useEffect(() => {
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, []);
-
-  useEffect(() => {
-    function handleMouseWheel(e) {
-      if (e.deltaY > 0) {
-        setIsScrolled('down'); // 스크롤 다운 상태
-      } else if (e.deltaY < 0) {
-        if (window.scrollY === 0) {
-          setIsScrolled('top'); // 스크롤이 정확히 0일 때 즉시 최상단 상태 적용
-        } else {
-          setIsScrolled('up'); // 스크롤 업 상태
-        }
-      }
-    }
-
-    function handleScroll() {
-      if (window.scrollY === 0) {
-        setIsScrolled('top'); // 스크롤이 완전히 0일 때 상태를 'top'으로 설정
-      }
-    }
-
-    window.addEventListener('wheel', handleMouseWheel);
-    window.addEventListener('scroll', handleScroll); // 추가: 스크롤 위치 변화를 지속적으로 감지
-
-    return () => {
-      window.removeEventListener('wheel', handleMouseWheel);
-      window.removeEventListener('scroll', handleScroll); // 이벤트 리스너 정리
-    };
   }, []);
 
   // 모바일 상단
@@ -111,6 +84,35 @@ export default function Header() {
     };
   }, []);
 
+  // 경로별 모바일 배경색
+  const bgColor = () => {
+    if (location.pathname === '/') {
+      return (
+        <div
+          className={`max-w-[1150px] my-[0] mx-[auto]
+      px-[20px] ${
+        isScrolled === 'up'
+          ? 'max-sm:bg-none'
+          : 'max-sm:bg-[linear-gradient(rgba(16,4,3,0.25)0%,rgba(255,255,255,0)100%)]'
+      }`}
+        >
+          <UserMenu />
+          <MoTopMenuWrap isScrolled={isScrolled} />
+        </div>
+      );
+    } else {
+      return (
+        <div
+          className="max-w-[1150px] my-[0] mx-[auto]
+      px-[20px] max-sm:bg-none"
+        >
+          <UserMenu />
+          <MoTopMenuWrap isScrolled={isScrolled} />
+        </div>
+      );
+    }
+  };
+
   return (
     <header
       ref={hdRef}
@@ -138,7 +140,8 @@ export default function Header() {
       onMouseLeave={handleMouseLeave}
       onClick={handleHeaderClick}
     >
-      <div
+      {bgColor()}
+      {/* <div
         className={`max-w-[1150px] my-[0] mx-[auto]
       px-[20px] ${
         isScrolled === 'up'
@@ -148,7 +151,7 @@ export default function Header() {
       >
         <UserMenu />
         <MoTopMenuWrap isScrolled={isScrolled} />
-      </div>
+      </div> */}
       <div
         className="flex items-center max-w-[1150px] h-[90px] my-[0] mx-[auto]
       px-[20px] max-sm:hidden"

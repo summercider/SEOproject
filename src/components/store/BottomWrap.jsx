@@ -5,6 +5,7 @@ import { useQuery } from '@tanstack/react-query';
 import SelectBrand from '@/components/store/SelectBrand';
 import SelectList from '@/components/store/SelectList';
 import PopCouponInfo from '@/components/store/PopCouponInfo';
+import BtnGoTop from '@/components/BtnGoTop';
 
 const initBrand = [
   '전체',
@@ -43,12 +44,12 @@ export default function BottomWrap() {
         const discountB = parseInt(b.discountRate?.replace('%', '') || '0', 10);
 
         if (isSortOrder === '추천순') {
-          return discountB - discountA; // 높은 할인율 우선
+          return discountB - discountA;
         } else if (isSortOrder === '인기순') {
-          return a.finalPrice - b.finalPrice; // 낮은 가격 우선
+          return a.finalPrice - b.finalPrice;
         } else {
           console.warn(`Unknown sort order: ${isSortOrder}`);
-          return 0; // 기본값
+          return 0;
         }
       })
     : [];
@@ -176,6 +177,7 @@ export default function BottomWrap() {
         activeName={activeName}
         sortedData={sortedData}
       />
+      <BtnGoTop />
     </div>
   );
 }

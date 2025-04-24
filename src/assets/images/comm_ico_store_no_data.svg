@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="ic_mmy_noshop_h60" transform="translate(-9753.885 -2047.984)">
+    <rect id="사각형_4426" data-name="사각형 4426" width="59.778" height="60" transform="translate(9753.885 2047.984)" fill="red" opacity="0"/>
+    <path id="합치기_163" data-name="합치기 163" d="M7.982,48.333a3,3,0,0,1-3-3V29h-.02C2.3,29-.675,27.427.136,24.4L6.571,4.6C7.268,2,8.732,0,11.4,0H40.355c2.666,0,4.152,2.083,4.827,4.6L51.617,24.4c.335,2.878-2.148,4.595-4.806,4.6V45.333a3,3,0,0,1-3,3Z" transform="translate(9757.049 2053.031)" fill="#e4e6e8"/>
+    <path id="패스_15222" data-name="패스 15222" d="M13.4,0A13.391,13.391,0,0,1,26.8,13.382C26.8,24.6,13.4,32.5,13.4,32.5S0,24.6,0,13.382A13.391,13.391,0,0,1,13.4,0Z" transform="translate(9787.087 2072.197)" fill="#c2c7cc"/>
+    <line id="선_110" data-name="선 110" x1="3.321" y2="11.667" transform="translate(9765.999 2062.197)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5" opacity="0.5"/>
+    <line id="선_111" data-name="선 111" x1="3.321" y2="11.667" transform="translate(9770.641 2062.197)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5" opacity="0.5"/>
+    <line id="선_112" data-name="선 112" x1="8" y2="8" transform="translate(9796.885 2081.983)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+    <line id="선_113" data-name="선 113" x2="8" y2="8" transform="translate(9796.885 2081.983)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+  </g>
+</svg>

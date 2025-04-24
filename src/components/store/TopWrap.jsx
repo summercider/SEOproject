@@ -15,7 +15,7 @@ export default function TopWrap() {
 
   return (
     <div className="max-sm:px-[20px]">
-      <div className=" pb-[30px] text-[#5f5e5e] text-[26px] flex justify-between max-sm:text-[18px]">
+      <div className=" pb-[30px] text-[#5f5e5e] text-[26px] flex justify-between max-sm:hidden">
         <h3 className="font-[500] text-gray-600">쿠폰</h3>
         <div>
           <ul className="flex text-[13px] leading-[16px] items-center gap-[8px] text-gray-400 ">
@@ -37,7 +37,7 @@ export default function TopWrap() {
           </ul>
         </div>
       </div>
-      <div className="flex justify-between items-center max-sm:flex-col max-sm:items-start">
+      <div className="flex justify-between items-center max-sm:flex-col max-sm:items-start max-sm:pt-[55px]">
         <span className="text-[16px] text-black tracking-[-0.025em]">
           지금 당장 쓸 수 있는
           <strong className="font-bold"> 쿠폰 보러가기</strong>

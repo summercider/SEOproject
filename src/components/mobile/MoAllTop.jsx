@@ -1,9 +1,14 @@
+import LoginPop from '@/components/LoginPop';
+import { useState } from 'react';
 import { Link } from 'react-router';
 
-function TopBtn({ icon, text }) {
+function TopBtn({ icon, text, onClick }) {
   return (
     <>
-      <button className="btn w-full h-[44px] bg-white rounded-[4px] border-[#DDE0E3]">
+      <button
+        className="btn w-full h-[44px] bg-white rounded-[4px] border-[#DDE0E3]"
+        onClick={onClick}
+      >
         <span className="mr-[6px]">{icon}</span>
         <span className="text-[14px] leading-[18px] font-medium">{text}</span>
       </button>
@@ -13,8 +18,14 @@ function TopBtn({ icon, text }) {
 
 // 상단 포인트컬러 부분
 export default function MoAllTop({ setMoIsShow }) {
+  const [show, setShow] = useState(false);
+
   function handleClose() {
     setMoIsShow(false);
+  }
+
+  function handleLoginPop() {
+    setShow(true);
   }
 
   return (
@@ -173,7 +184,10 @@ export default function MoAllTop({ setMoIsShow }) {
             </g>
           </svg>
           <div>
-            <Link className="text-[22px] leading-[28px] text-white flex items-center">
+            <Link
+              to="/login"
+              className="text-[22px] leading-[28px] text-white flex items-center"
+            >
               <span className="leading-[43px]">로그인</span>
               <span className="leading-[43px]">
                 <svg
@@ -207,7 +221,10 @@ export default function MoAllTop({ setMoIsShow }) {
           </div>
         </div>
         <div>
-          <Link className="text-[14px] leading-[18px] text-white underline">
+          <Link
+            className="text-[14px] leading-[18px] text-white underline"
+            to="/member/joinGate"
+          >
             회원가입
           </Link>
         </div>
@@ -337,7 +354,9 @@ export default function MoAllTop({ setMoIsShow }) {
             </svg>
           }
           text={'주문/예약내역'}
+          onClick={handleLoginPop}
         ></TopBtn>
+        {show ? <LoginPop show={show} setShow={setShow} /> : null}
       </div>
     </div>
   );
