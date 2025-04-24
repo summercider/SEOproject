@@ -10,7 +10,7 @@ export default function BrandActionAdd() {
             'https://www.lotteeatz.com/upload/etc/plating/LotteGRS_Concession_BrandBook_F.pdf';
         }}
         className="btn flex-1 rounded-[4px] h-[44px] text-[14px] text-gray-600 leading-[18px]
-        hover:bg-[#131517]"
+        hover:bg-[#EFF1F3]"
       >
         브로슈어 다운로드(KOR)
       </button>
