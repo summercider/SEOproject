@@ -11,7 +11,7 @@ const liStyle = {
 export default function MoMenuWrap() {
   const [show, setShow] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isActive, setIsActive] = useState(0);
+  const [isActive, setIsActive] = useState(null);
   const [moIsShow, setMoIsShow] = useState(false);
 
   const { pathname } = useLocation();
@@ -63,12 +63,24 @@ export default function MoMenuWrap() {
     };
   }, []);
 
-  function handleClickActive() {
-    setIsActive(0);
+  function handleClicMoMenuShow(e) {
+    e.preventDefault;
+    setMoIsShow(true);
   }
 
-  function handleClicMoMenuShow() {
-    setMoIsShow(true);
+  // pathname에 따른 isActive 처리
+  useEffect(() => {
+    if (pathname === '/') {
+      setIsActive(0);
+    } else {
+      setIsActive(null);
+    }
+  }, [pathname]);
+
+  function handleClickActive() {
+    if (pathname === '/') {
+      setIsActive(0);
+    }
   }
 
   return (
@@ -87,7 +99,11 @@ export default function MoMenuWrap() {
             <Link
               to="/"
               onClick={(e) => handleClickActive(e.preventDefault)}
-              className="relative after::content-[''] after:absolute after:bottom-[-8px] after:left-[12px] after:w-[4px] after:h-[4px] after:bg-[#00A5B9] after:rounded-[4px]"
+              className={`relative ${
+                isActive === 0
+                  ? 'after::content-[""] after:absolute after:bottom-[-8px] after:left-[12px] after:w-[4px] after:h-[4px] after:bg-[#00A5B9] after:rounded-[4px]'
+                  : ''
+              }`}
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="26" height="28">
                 <g id="ic_dock_home_sel">
@@ -113,7 +129,7 @@ export default function MoMenuWrap() {
             </Link>
           </li>
           <li style={liStyle}>
-            <Link to="/">
+            <Link>
               <svg
                 id="ic_dock_md_def"
                 xmlns="http://www.w3.org/2000/svg"
@@ -230,7 +246,7 @@ export default function MoMenuWrap() {
             </button>
           </li>
           <li style={liStyle}>
-            <Link to="/" onClick={(e) => handleLoginPop(e.preventDefault)}>
+            <Link onClick={(e) => handleLoginPop(e.preventDefault)}>
               <svg xmlns="http://www.w3.org/2000/svg" width="26" height="28">
                 <g id="ic_dock_my_def" transform="translate(-50 -748)">
                   <g
@@ -274,7 +290,7 @@ export default function MoMenuWrap() {
             {show ? <LoginPop show={show} setShow={setShow} /> : null}
           </li>
           <li style={liStyle}>
-            <Link to="/" onClick={handleClicMoMenuShow}>
+            <Link onClick={handleClicMoMenuShow}>
               <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
                 <g id="ic_dock_menu_def" transform="translate(-50 -748)">
                   <rect

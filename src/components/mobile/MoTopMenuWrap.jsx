@@ -1,20 +1,27 @@
 import LoginPop from '@/components/LoginPop';
 import { useState } from 'react';
-import { Link } from 'react-router';
+import { Link, useLocation, useNavigate } from 'react-router';
 
-// 모바일 상단 메뉴
+// 모바일 상단 메뉴 EATZ마일, 아이콘3
 export default function MoTopMenuWrap({ isScrolled }) {
   const [show, setShow] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate(); // useNavigate 초기화
 
   function handleLoginPop(e) {
     e.preventDefault;
     setShow(true);
   }
 
-  return (
-    <div className="hidden max-sm:block w-full">
-      <div className="flex justify-between items-center h-[55px]">
-        <div className="">
+  function handleBack() {
+    navigate(-1); // 이전페이지 이동
+  }
+
+  // 경로별 모바일 아이콘 적용(인덱스, 스토어 쿠폰, 나머지)
+  const leftIcons = () => {
+    if (location.pathname === '/') {
+      return (
+        <div>
           <Link
             className="flex items-center"
             onClick={(e) => handleLoginPop(e)}
@@ -75,6 +82,98 @@ export default function MoTopMenuWrap({ isScrolled }) {
             </svg>
           </Link>
         </div>
+      );
+    } else if (location.pathname.startsWith('/store/coupon')) {
+      return (
+        <div>
+          <Link className="flex items-center" onClick={handleBack}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <g id="ic_nv_back_H24" transform="translate(-39 -57)">
+                <rect
+                  id="사각형_4319"
+                  data-name="사각형 4319"
+                  width="24"
+                  height="24"
+                  transform="translate(39 57)"
+                  fill="none"
+                />
+                <path
+                  id="패스_14480"
+                  data-name="패스 14480"
+                  d="M51.515,61.533l-8,8,8,8"
+                  transform="translate(-2.515 -0.533)"
+                  fill="none"
+                  stroke="#000"
+                  strokeWidth="2"
+                />
+                <line
+                  id="선_42"
+                  data-name="선 42"
+                  x2="17"
+                  transform="translate(41 69)"
+                  fill="none"
+                  stroke="#000"
+                  strokeWidth="2"
+                />
+              </g>
+            </svg>
+            <h3 className="ml-[10px] text-[18px] font-bold text-black">쿠폰</h3>
+          </Link>
+        </div>
+      );
+    } else {
+      return (
+        <div>
+          <Link className="flex items-center" onClick={handleBack}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <g id="ic_nv_back_H24" transform="translate(-39 -57)">
+                <rect
+                  id="사각형_4319"
+                  data-name="사각형 4319"
+                  width="24"
+                  height="24"
+                  transform="translate(39 57)"
+                  fill="none"
+                />
+                <path
+                  id="패스_14480"
+                  data-name="패스 14480"
+                  d="M51.515,61.533l-8,8,8,8"
+                  transform="translate(-2.515 -0.533)"
+                  fill="none"
+                  stroke={isScrolled === 'up' ? '#000' : '#fff'}
+                  strokeWidth="2"
+                />
+                <line
+                  id="선_42"
+                  data-name="선 42"
+                  x2="17"
+                  transform="translate(41 69)"
+                  fill="none"
+                  stroke={isScrolled === 'up' ? '#000' : '#fff'}
+                  strokeWidth="2"
+                />
+              </g>
+            </svg>
+          </Link>
+        </div>
+      );
+    }
+  };
+
+  const rightIcon = () => {
+    if (location.pathname === '/') {
+      return (
         <div className="flex gap-x-[25px]">
           <button type="button" className="" onClick={(e) => handleLoginPop(e)}>
             <svg
@@ -246,6 +345,117 @@ export default function MoTopMenuWrap({ isScrolled }) {
           </button>
           {show ? <LoginPop show={show} setShow={setShow} /> : null}
         </div>
+      );
+    } else if (location.pathname.startsWith('/store/coupon')) {
+      return (
+        <div className="flex gap-x-[25px]">
+          <button type="button" className="" onClick={(e) => handleLoginPop(e)}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <g id="ic_nv_cart_H24" transform="translate(-337 -57)">
+                <rect
+                  id="사각형_4295"
+                  data-name="사각형 4295"
+                  width="24"
+                  height="24"
+                  transform="translate(337 57)"
+                  fill="none"
+                />
+                <g
+                  id="사각형_4294"
+                  data-name="사각형 4294"
+                  transform="translate(339 63)"
+                  fill="none"
+                  stroke="#000"
+                  strokeWidth="2"
+                >
+                  <path
+                    d="M0,0H20a0,0,0,0,1,0,0V12a6,6,0,0,1-6,6H6a6,6,0,0,1-6-6V0A0,0,0,0,1,0,0Z"
+                    stroke="none"
+                  />
+                  <path
+                    d="M1,1H19a0,0,0,0,1,0,0V12a5,5,0,0,1-5,5H6a5,5,0,0,1-5-5V1A0,0,0,0,1,1,1Z"
+                    fill="none"
+                  />
+                </g>
+                <path
+                  id="패스_14336"
+                  data-name="패스 14336"
+                  d="M8,14.5V8.565A4.033,4.033,0,0,0,4,4.5,4.033,4.033,0,0,0,0,8.565V14.5"
+                  transform="translate(345 54.5)"
+                  fill="none"
+                  stroke="#000"
+                  strokeWidth="2"
+                />
+              </g>
+            </svg>
+          </button>
+          {show ? <LoginPop show={show} setShow={setShow} /> : null}
+        </div>
+      );
+    } else {
+      return (
+        <div className="flex gap-x-[25px]">
+          <button type="button" className="" onClick={(e) => handleLoginPop(e)}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <g id="ic_nv_cart_H24_w" transform="translate(-337 -57)">
+                <rect
+                  id="사각형_4295"
+                  data-name="사각형 4295"
+                  width="24"
+                  height="24"
+                  transform="translate(337 57)"
+                  fill="none"
+                />
+                <g
+                  id="사각형_4294"
+                  data-name="사각형 4294"
+                  transform="translate(339 63)"
+                  fill="none"
+                  stroke={isScrolled === 'up' ? '#000' : '#fff'}
+                  strokeWidth="2"
+                >
+                  <path
+                    d="M0,0H20a0,0,0,0,1,0,0V12a6,6,0,0,1-6,6H6a6,6,0,0,1-6-6V0A0,0,0,0,1,0,0Z"
+                    stroke="none"
+                  />
+                  <path
+                    d="M1,1H19a0,0,0,0,1,0,0V12a5,5,0,0,1-5,5H6a5,5,0,0,1-5-5V1A0,0,0,0,1,1,1Z"
+                    fill="none"
+                  />
+                </g>
+                <path
+                  id="패스_14336"
+                  data-name="패스 14336"
+                  d="M8,14.5V8.565A4.033,4.033,0,0,0,4,4.5,4.033,4.033,0,0,0,0,8.565V14.5"
+                  transform="translate(345 54.5)"
+                  fill="none"
+                  stroke={isScrolled === 'up' ? '#000' : '#fff'}
+                  strokeWidth="2"
+                />
+              </g>
+            </svg>
+          </button>
+          {show ? <LoginPop show={show} setShow={setShow} /> : null}
+        </div>
+      );
+    }
+  };
+
+  return (
+    <div className="hidden max-sm:block max-sm:w-full">
+      <div className="flex justify-between items-center h-[55px]">
+        {leftIcons()}
+        {rightIcon()}
       </div>
     </div>
   );

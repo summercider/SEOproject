@@ -1,7 +1,10 @@
 import { Link } from 'react-router';
 import noData from '@/assets/images/comm_ico_no_result.svg';
+import LoginPop from '@/components/LoginPop';
+import { useState } from 'react';
 
 export default function SelectList({ selectData, data, activeName }) {
+  const [show, setShow] = useState(false);
   const brandColor = [
     {
       name: '크리스피크림 도넛',
@@ -44,15 +47,19 @@ export default function SelectList({ selectData, data, activeName }) {
     }
   };
 
+  function handleLoginPop() {
+    setShow(true);
+  }
+
   return (
     <div>
       {data && selectData && selectData.length > 0 ? (
-        <ul className="grid grid-cols-5 gap-[20px] max-sm:grid-cols-2">
+        <ul className="grid grid-cols-5 gap-[20px] max-sm:grid-cols-2 max-sm:gap-[10px]">
           {selectData?.map((product) => (
             <li key={product.id} className="col-span-1">
-              <Link>
+              <Link onClick={handleLoginPop}>
                 <div
-                  className="w-full h-[200px] relative border border-[#EFF1F3] bg-white rounded-[4px]"
+                  className="w-full h-[200px] relative border border-[#EFF1F3] bg-white rounded-[4px] max-sm:h-[150px]"
                   style={{
                     backgroundImage: `url(${product.productImg})`,
                     backgroundSize: 'contain',
@@ -177,6 +184,7 @@ export default function SelectList({ selectData, data, activeName }) {
           </p>
         </div>
       )}
+      {show ? <LoginPop show={show} setShow={setShow} /> : null}
     </div>
   );
 }
