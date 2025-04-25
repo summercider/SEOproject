@@ -17,8 +17,9 @@ export default function Aside({ defaultData }) {
           max-sm:before:hidden 
           "
     >
+      {/* z- 10 > 101 > 100 수정 Bside Pop과 충돌 */}
       <div
-        className="w-[382px] pr-[40px] pt-[40px] shrink-0 sticky top-0  z-101
+        className="w-[382px] pr-[40px] pt-[40px] shrink-0 sticky top-0  z-100 
         max-sm:w-full max-sm:pr-0 max-sm:pt-0"
       >
         <div>

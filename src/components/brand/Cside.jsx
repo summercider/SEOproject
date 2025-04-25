@@ -18,7 +18,7 @@ export default function Cside({ data, popIdx, setPopIdx }) {
             before:w-[1px] before:h-[calc(100%+50px)] before:bg-[#DDE0E3] before:absolute before:top-0 before:right-0
             max-sm:before:hidden max-sm:w-full ${popIdx ? 'z-0' : 'z-101'}
             `}
-      // nearby버튼 누르면 z-0 , 안누르면 z-10
+      // nearby버튼 누르면 z-0 , 안누르면 z-101
     >
       <div
         className="pr-[40px] pt-[40px]  sticky top-0 
