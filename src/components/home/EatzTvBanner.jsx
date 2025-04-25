@@ -39,7 +39,7 @@ const videoInfo = [
 export default function EatzTvBanner() {
   return (
     <div
-      className={`mt-[20px] relative
+      className={`mt-[20px] relative max-sm:mt-0
       ${styles['eatz']}`}
     >
       <Swiper
@@ -55,7 +55,7 @@ export default function EatzTvBanner() {
           <SwiperSlide key={index} style={{ maxWidth: '260px' }}>
             <Link className="block">
               <div className="relative">
-                <div className="w-[260px] h-[146px]">
+                <div className="">
                   <img
                     className="w-full rounded-[4px] object-cover"
                     src={item.thumbnail}

@@ -44,7 +44,7 @@ const menus = [
   },
 ];
 
-export default function Gnb({ isOpen, onMouseEnter }) {
+export default function Gnb({ isOpen, onMouseEnter, handleMouseUp }) {
   const location = useLocation();
 
   return (
@@ -68,6 +68,7 @@ export default function Gnb({ isOpen, onMouseEnter }) {
                 subMenu={item.subMenu}
                 activePath={location.pathname}
                 onSubClick={(sub) => console.log(`${sub}`)}
+                handleMouseUp={handleMouseUp}
               />
             )}
           </li>

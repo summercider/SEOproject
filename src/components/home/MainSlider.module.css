@@ -236,4 +236,8 @@
     width: 100% !important;
     background-size: cover !important;
   }
+
+  .eatz [class*='swiper-horizontal'] {
+    padding: 0 20px !important;
+  }
 }

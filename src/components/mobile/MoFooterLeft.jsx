@@ -19,7 +19,7 @@ const infoData = mofooterMenu.filter((menu) => menu.info);
 
 export default function MoFooterLeft() {
   return (
-    <div>
+    <div className="w-full">
       <ul>
         {itemData.map((menu, index) => (
           <li key={index} className="group py-[5px]">

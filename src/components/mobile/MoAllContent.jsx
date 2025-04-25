@@ -58,7 +58,7 @@ function MoMenuList({ children, title, accordion, toggleAccordion }) {
         onClick={() => toggleAccordion(title)}
       >
         {title}
-        <span className="w-[16px] h-[16px] absolute top-[50%] -translateY-[50%] right-0 bg-no-repeat bg-cover">
+        <span className="w-[16px] h-[16px] absolute top-[50%] -translate-y-[50%] right-0 bg-no-repeat bg-cover">
           <svg
             className={`{${
               accordion ? 'transition-[all,.3s] rotate-[180deg] ' : 'rotate-0'
