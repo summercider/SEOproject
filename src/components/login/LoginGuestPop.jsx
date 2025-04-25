@@ -272,6 +272,7 @@ export default function LoginGuestPop({ setShow, show }) {
                     <LoginIcon.more />
                   </button>
                   <AgreePop
+                    setAgree={setAgree}
                     agreePopShow={agreePopShow}
                     setAgreePopShow={setAgreePopShow}
                   />

@@ -73,8 +73,8 @@ export default function Bside({ defaultData }) {
           className={`flex gap-[6px] pt-[20px] pb-[15px]
           whitespace-nowrap
           max-sm:py-[15px]
-          max-sm: overflow-x-auto 
-          z-100
+          overflow-x-auto 
+          z-9
           `}
           style={
             sticky
