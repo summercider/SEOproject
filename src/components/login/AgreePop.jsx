@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-export default function AgreePop({ agreePopShow, setAgreePopShow }) {
+export default function AgreePop({ agreePopShow, setAgreePopShow, setAgree }) {
   //팝업 띄우면 scroll 막기
   const stopScroll = () => {
     document.body.style.overflow = 'hidden';
@@ -18,8 +18,9 @@ export default function AgreePop({ agreePopShow, setAgreePopShow }) {
   }, [agreePopShow]);
   //  닫기버튼
   const closeClick = (e) => {
-    e.stopPropagation;
+    e.stopPropagation();
     setAgreePopShow(false);
+    setAgree(true);
   };
   return (
     <div

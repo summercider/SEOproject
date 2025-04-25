@@ -3,8 +3,7 @@ import share from '@/assets/images/ico_store_share.svg';
 import AsidePop from '@/components/brand/AsidePop';
 import { useEffect, useState } from 'react';
 
-export default function BrandInfo({ defaultData }) {
-  const [show, setShow] = useState(false);
+export default function BrandInfo({ defaultData, show, setShow }) {
   const showClick = () => {
     setShow(true);
   };
