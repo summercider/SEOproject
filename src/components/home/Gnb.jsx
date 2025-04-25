@@ -14,26 +14,22 @@ const menus = [
   {
     title: '이벤트',
     subMenu: [
-
       { name: '이벤트', path: '/event/all' },
       { name: '체험클래스', path: '/event/class' },
       { name: '도넛클래스', path: '/event/class' },
       { name: '룰렛', path: '/event/roulette' },
       { name: 'EATZ TV', path: '/event/eatzTv' },
       { name: '출석체크', path: '/event/dailycheck' },
-
     ],
   },
   {
     title: '스토어',
     path: '/store',
     subMenu: [
-
       { name: '전체', path: '/store/all' },
       { name: '쿠폰', path: '/store/coupon' },
       { name: 'EATZ카드', path: '/store/card' },
       { name: '쇼핑', path: '/store/shop' },
-
     ],
   },
   {
@@ -44,7 +40,6 @@ const menus = [
       { name: '공지사항', path: '/voc/notice' },
       { name: '설문조사', path: '/voc/survey' },
       { name: '고객의 소리', path: '/voc/voice' },
-
     ],
   },
 ];
