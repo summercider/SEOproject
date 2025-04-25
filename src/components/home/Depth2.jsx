@@ -1,8 +1,16 @@
 import { Link } from 'react-router';
 
-export default function Depth2({ subMenu, activePath, onSubClick }) {
+export default function Depth2({
+  subMenu,
+  activePath,
+  onSubClick,
+  handleMouseUp,
+}) {
   return (
-    <ul className="absolute left-0 top-[63px] pr-[20px] w-full z-[999]">
+    <ul
+      className="absolute left-0 top-[63px] pr-[20px] w-full z-[999]"
+      onClick={handleMouseUp}
+    >
       {subMenu.map((menuItem) => {
         const isActiveSub = menuItem.path === activePath;
 

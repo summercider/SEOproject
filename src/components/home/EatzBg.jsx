@@ -4,7 +4,7 @@ import EatzTvBanner from '@/components/home/EatzTvBanner';
 
 export default function EatzBg() {
   return (
-    <div className="pt-[40px]">
+    <div className="pt-[40px] max-sm:pt-[30px]">
       <div
         style={{
           backgroundImage: `url(${Bg})`,

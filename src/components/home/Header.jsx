@@ -113,6 +113,10 @@ export default function Header() {
     }
   };
 
+  function handleMouseUp() {
+    setIsOpen(false);
+  }
+
   return (
     <header
       ref={hdRef}
@@ -158,12 +162,16 @@ export default function Header() {
         onClick={handleHeaderBottomClick}
         ref={hbRef}
       >
-        <h1 className="w-[72px] h-[60px] py-[10px]">
+        <h1 className="w-[72px] h-[60px] py-[10px]" onClick={handleMouseUp}>
           <Link to="/" className="block">
             <img src={logo} alt="롯데잇츠" />
           </Link>
         </h1>
-        <Gnb onMouseEnter={handleMouseEnter} isOpen={isOpen} />
+        <Gnb
+          onMouseEnter={handleMouseEnter}
+          isOpen={isOpen}
+          handleMouseUp={handleMouseUp}
+        />
         <UtilMenu />
         <OrderButton />
       </div>
